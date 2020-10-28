@@ -1,0 +1,492 @@
+* {margin: 0; padding: 0;}
+ol,ul {list-style: none;}
+a {text-decoration: none; outline: 0;}
+img {border: 0;}
+
+
+/*--------------------------gnb_wrapper 영역--------------------------*/
+#gnb_wrapper{
+    height: 70px;
+    background-color: #fff;
+    position: relative;
+}
+
+.left_gnb{
+    height: 100%;
+    float: left;
+    line-height: 70px;
+    padding-left: 50px;
+}
+
+.left_gnb .menu_icon{
+    position: relative;
+    display: inline-block;
+    width: 1.25em;
+    height: 0.8em;
+    margin-right: 0.3em;
+    border-top: 0.2em solid rgb(23, 29, 25);
+    border-bottom: 0.2em solid rgb(23, 29, 25);
+}
+
+.left_gnb .menu_icon:before{
+    content: "";
+    position: absolute;
+    top: 0.3em;
+    left: 0px;
+    width: 100%;
+    border-top: 0.2em solid rgb(23, 29, 25);
+}
+
+.left_gnb .menu_font{
+    font-size: 20px;
+    color: rgb(23, 29, 25);
+    font-weight: bold;
+}
+
+.logo_gnb{
+    height: 100%;
+    text-align: center;
+}
+
+.logo_gnb img{
+    width: 170px;
+    padding-top: 10px;
+    margin-left: -150px;
+}
+
+.right_gnb{
+    height: 100%;
+    position: absolute;
+    top: 0; right: 0;
+    line-height: 70px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.right_gnb .join_gnb{float: left; margin-right: 50px;}
+.right_gnb .login_gnb{float: left;margin-right: 50px;}
+
+.login_gnb a{
+    border: 2px solid rgb(23, 29, 25);
+    padding: 10px 30px;
+    border-radius: 2em;
+    color: rgb(23, 29, 25);
+}
+.login_gnb a:hover{color: #486bcd; border-color: #486bcd;}
+
+.join_gnb a{color: rgb(23, 29, 25);}
+.join_gnb a:hover{color: #486bcd;}
+/*-------------------------//gnb_wrapper 영역-------------------------*/
+
+/*---------------------idpwd_wrapper 영역-------------------*/
+#idpwd_wrapper {
+    width: 500px; height: 560px;
+    position: relative;
+    margin: 50px auto;
+    padding: 0 10px;
+}
+
+#idpwd_wrapper h1{
+    margin-bottom: 20px;
+}
+
+/* --------------- tab_container 영역 ----------------------- */
+.tab_container > .tabs {
+    width: 100%; height: 40px;
+    margin-bottom: 30px;
+    color: #486bcd;
+}
+
+.tabs .active a {
+    width: 247px; height: 40px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    color: #000;
+}
+
+/* --------------- form_control 영역 ------------------------ */
+.form_control {
+    width: 100%; height: 35px;
+    position: absolute;
+    top: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* -------------------- id_name_form 영역 ------------------------ */
+.id_form {
+    width: 100%; height: 70px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.id_form label{position: absolute;}
+
+
+.id_container .ok_btn {
+    color: #fff;
+    background-color: #486bcd;
+}
+
+/* -------------------- email_form 영역 --------------------- */
+.email_form {
+    width: 100%; height: 70px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.email_form label{position: absolute;}
+
+.email_request {width: 100%; height: 72px;}
+
+.email_request p {
+    width: 200px; height: 25px;
+    float: left;
+    font-size: 13px;
+    color: #999;
+    margin-top: 0px;
+}
+
+.email_request button {
+    width: 150px; height: 25px;
+    float: right;
+    font-size: 12px;
+    line-height: 1.1;
+    border-radius: 3px;
+    color: #486bcd;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-color: #486bcd;
+}
+
+.email_request .request_num {
+    width: 350px; height: 30px;
+    margin-top: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.email_request .request_ok {
+    width: 140px; height: 32px;
+    background-color: #fff;
+    border-radius: 3px;
+    border-color: #486bcd;
+    border: 1px solid transparent;
+    border-color: #486bcd;
+    color: #486bcd;
+}
+
+/* ------------------- btn_container 영역 ------------------- */
+.btn_container {
+    width: 100%; height: 40px;
+    margin-top: 60px; 
+}
+
+.btn_container button {
+    width: 240px; height: 40px;
+    color: #486bcd;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-color: #486bcd;
+    border-radius: 4px;
+}
+
+.btn_container button:first-child {margin-right: 14px;}
+
+/*---------------------//idpwd_wrapper 영역-------------------*/
+
+/*-------------------------비밀번호 찾기 페이지------------------------*/
+.pwd_container> .tab_container> .tabs > ul > .active:last-child a{
+    color: #486bcd;
+    background-color: white;
+    border-top: 1px solid #486bcd;
+    border-right: 1px solid #486bcd;
+    border-left: 1px solid #486bcd;
+    cursor: default;
+}
+
+.pwd_container> .tab_container> .tabs > ul > .active:first-child a{
+   border-bottom: 1px solid #486bcd;
+   color: #333;
+}
+
+
+.pwd_container h1 {
+    padding-top: 20px;
+    text-align: unset;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.name_form {
+    width: 100%; height: 70px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.name_form label {position: absolute;}
+
+.pwd_container .ok_btn {
+    color: #fff;
+    background-color: #486bcd;
+}
+
+/*--------------------------footer 영역--------------------------*/
+footer{
+    width: 100%; height: 120px;
+}
+
+footer p {
+    text-align: center;
+    margin: 50px 0;
+}
+/*-------------------------//footer 영역-------------------------*/
+
+@media (max-width:375px){
+    /*--------------------------gnb_wrapper 영역--------------------------*/
+    #gnb_wrapper{
+        height: 70px;
+        background-color: #fff;
+        position: relative;
+    }
+    
+    .left_gnb{
+        height: 100%;
+        float: left;
+        line-height: 70px;
+        padding-left: 10px;
+    }
+    
+    .left_gnb .menu_icon{
+        position: relative;
+        display: inline-block;
+        width: 1.0em;
+        height: 0.6em;
+        margin-right: 0.1em;
+        border-top: 0.2em solid rgb(23, 29, 25);
+        border-bottom: 0.2em solid rgb(23, 29, 25);
+    }
+    
+    .left_gnb .menu_icon:before{
+        content: "";
+        position: absolute;
+        top: 0.2em;
+        left: 0px;
+        width: 100%;
+        border-top: 0.2em solid rgb(23, 29, 25);
+    }
+    
+    .left_gnb .menu_font{
+        font-size: 14px;
+        color: rgb(23, 29, 25);
+        font-weight: bold;
+    }
+    
+    .logo_gnb{
+        height: 100%;
+        text-align: center;
+    }
+    
+    .logo_gnb img{
+        width: 90px;
+        padding-top: 23px;
+        margin-left: -75px;
+    }
+    
+    .right_gnb{
+        height: 100%;
+        position: absolute;
+        top: 0; right: 0;
+        line-height: 70px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    
+    .right_gnb .join_gnb{float: left; margin-right: 5px;}
+    .right_gnb .login_gnb{float: left;margin-right: 5px;}
+    
+    .login_gnb a{
+        border: 2px solid rgb(23, 29, 25);
+        padding: 5px 10px;
+        border-radius: 2em;
+        color: rgb(23, 29, 25);
+    }
+    .login_gnb a:hover{color: #486bcd; border-color: #486bcd;}
+    
+    .join_gnb a{color: rgb(23, 29, 25);}
+    .join_gnb a:hover{color: #486bcd;}
+    /*-------------------------//gnb_wrapper 영역-------------------------*/
+
+    /*---------------------idpwd_wrapper 영역-------------------*/
+    #idpwd_wrapper {
+        height: 560px;
+        position: relative;
+        margin: 30px auto;
+        padding: 0 10px;
+    }
+
+    #idpwd_wrapper h1{
+        margin-bottom: 20px;
+        font-size: 21px;
+    }
+
+    /* --------------- tab_container 영역 ----------------------- */
+    .tab_container > .tabs {
+        height: 30px;
+        margin-bottom: 20px;
+        color: #486bcd;
+        font-size: 13px;
+    }
+
+    .tabs .active a {
+        width: 175px; height: 30px;
+        float: left;
+        text-align: center;
+        line-height: 30px;
+        color: #000;
+    }
+
+    /* --------------- form_control 영역 ------------------------ */
+    .form_control {
+        width: 353px; height: 30px;
+        position: absolute;
+        top: 25px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    /* -------------------- id_name_form 영역 ------------------------ */
+    .id_form {
+        width: 100%; height: 70px;
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    .id_form label{position: absolute; font-size: 15px;}
+
+
+    .id_container .ok_btn {
+        color: #fff;
+        background-color: #486bcd;
+    }
+
+    /* -------------------- email_form 영역 --------------------- */
+    .email_form {
+        width: 100%; height: 70px;
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    .email_form label{position: absolute; font-size: 15px;}
+
+    .email_request {width: 100%; height: 72px;}
+
+    .email_request p {
+        width: 200px; height: 25px;
+        float: left;
+        font-size: 13px;
+        color: #999;
+        margin-top: 0px;
+        margin-right: 55px;
+    }
+
+    .email_request button {
+        width: 100px; height: 25px;
+        float: left;
+        font-size: 12px;
+        line-height: 1.1;
+        border-radius: 3px;
+        color: #486bcd;
+        background-color: #fff;
+        border: 1px solid transparent;
+        border-color: #486bcd;
+    }
+
+    .email_request .request_num {
+        width: 240px; height: 30px;
+        margin-top: 15px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .email_request .request_ok {
+        width: 108px; height: 32px;
+        background-color: #fff;
+        border-radius: 3px;
+        border-color: #486bcd;
+        border: 1px solid transparent;
+        border-color: #486bcd;
+        color: #486bcd;
+    }
+
+    /* ------------------- btn_container 영역 ------------------- */
+    .btn_container {
+        width: 100%; height: 40px;
+        margin-top: 40px; 
+    }
+
+    .btn_container button {
+        width: 170px; height: 35px;
+        color: #486bcd;
+        background-color: #fff;
+        border: 1px solid transparent;
+        border-color: #486bcd;
+        border-radius: 4px;
+    }
+
+    .btn_container button:first-child {margin-right: 14px;}
+
+    /*---------------------//idpwd_wrapper 영역-------------------*/
+
+    /*-------------------------비밀번호 찾기 페이지------------------------*/
+    .pwd_container> .tab_container> .tabs > ul > .active:last-child a{
+        color: #486bcd;
+        background-color: white;
+        border-top: 1px solid #486bcd;
+        border-right: 1px solid #486bcd;
+        border-left: 1px solid #486bcd;
+        cursor: default;
+    }
+
+    .pwd_container> .tab_container> .tabs > ul > .active:first-child a{
+    border-bottom: 1px solid #486bcd;
+    color: #333;
+    }
+
+    .pwd_container h1 {
+        padding-top: 20px;
+        text-align: unset;
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .name_form {
+        width: 100%; height: 70px;
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    .name_form label {position: absolute;}
+
+    .pwd_container .ok_btn {
+        color: #fff;
+        background-color: #486bcd;
+    }
+
+    /*--------------------------footer 영역--------------------------*/
+    footer{
+        width: 100%; height: 120px;
+        font-size: 12px;
+    }
+
+    footer p {
+        text-align: center;
+        margin: 50px 0;
+    }
+    /*-------------------------//footer 영역-------------------------*/
+}

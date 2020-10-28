@@ -1,0 +1,454 @@
+/* -----------------------------------초기화----------------------------------- */
+/* 속성들을 클래스 이름으로 생성하여 그 속성이 필요한 태그에 클래스 이름으로 추가함  */
+
+/* 노말라이즈 */
+body, ul, li, h1, h2, h3, h4, h5, p, figure {
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+a {
+    color:inherit;
+    text-decoration:none;
+}
+
+/* 라이브러리 */
+.con {
+    margin:0 auto;
+}
+
+.img-box > img {
+    width:100%;
+    display:block;
+}
+
+.row::after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.cell {
+    float:left;
+    box-sizing:border-box;
+}
+
+.cell-right {
+    float:right;
+    box-sizing:border-box;
+}
+
+.margin-0-auto {
+    margin:0 auto;
+}
+
+.block {
+    display:block;
+}
+
+.inline-block {
+    display:inline-block;
+}
+
+.text-align-center {
+    text-align:center;
+}
+
+.line-height-0-ch-only {
+    line-height:0;
+}
+
+.line-height-0-ch-only > * {
+    line-height:normal;
+}
+
+.relative {
+    position:relative;
+}
+
+.absolute-left {
+    position:absolute;
+    left:0;
+}
+
+.absolute-right {
+    position:absolute;
+    right:0;
+}
+
+.absolute-middle {
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.table {
+    display:table;
+}
+
+.table-cell {
+    display:table-cell;
+}
+
+input, button, select, fieldset {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border:0;
+    background-color:transparent;
+}
+
+fieldset {
+    padding:0;
+    margin:0;
+}
+
+.blind, legend {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    font-size: 12px;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+button {
+    cursor:pointer;
+    padding:0;
+    font-size:inherit;
+}
+/* ----------------------------------//초기화---------------------------------- */
+
+
+/* -----------------------------------커스텀----------------------------------- */
+.con {
+    /* max-width:1440px; */
+    max-width:1700px;
+}
+
+.con-min-width {
+    min-width:320px;
+}
+
+html {
+    overflow-x:hidden;
+}
+
+body {
+    height:fit-content;
+}
+/* ----------------------------------//커스텀---------------------------------- */
+
+/* -----------------------------메인 배너 슬라이더------------------------------ */
+.slider-wrap {
+    position:relative;
+}
+
+.main-slider {
+    position:relative;
+    margin-bottom:0 !important;
+}
+
+.main-slider .slide-item .slide-con {
+    position:relative;
+}
+
+/* @keyframes는 어떤 모양에서 어떤 모양으로 변할지 정한다.
+[문법]
+@keyframes name{
+    0% {...}
+    n% {...}
+    100% {...}
+}
+*/
+
+/* @keyframes more-btm-line {
+    0%{
+        width:0;
+    }
+    100%{
+        width:100%;
+    }
+}
+
+@keyframes more-btm-line-hover {
+    0%{
+        width:0;
+    }
+    100%{
+        width:100%;
+    }
+} */
+/* ----------------------------//메인 배너 슬라이더----------------------------- */
+
+/* ---------------------------------사이드 버튼--------------------------------- */
+/*slick을 사용하면 arrows 속성의 default는 true가 됨.
+따라서 자동으로 버튼 영역들이 생성
+전체 arrow = .slick-arrow
+이전 = .slick-prev
+다음 = .slick-next
+*/
+.main-slider .slick-arrow {
+    position:absolute;
+    top:50%;
+    left:4px;
+    /* transform:translatey(-50%); */
+    display:block;
+    z-index:50; /*배너 이미지보다 앞으로 나와야하기 때문에 z-index 설정*/
+}
+
+.main-slider .slick-arrow::before {
+    content:"";
+    display:block;
+    width:35px;
+    height:55px;
+    opacity:1;
+}
+
+.main-slider .slick-next {
+    left:auto;
+    right:24px;
+}
+
+.main-slider .slick-prev::before {/*이전 버튼 이미지*/
+    background:url('../images/prev_icon.png') no-repeat center;
+    background-size: contain;
+}
+
+.main-slider .slick-next::before {/*다음 버튼 이미지*/
+    background:url('../images/next_icon.png') no-repeat center;
+    background-size: contain;
+}
+/* --------------------------------//사이드 버튼-------------------------------- */
+
+/* ---------------------------------페이지 버튼--------------------------------- */
+/* slick-dots는 dots indicator가 저장된 container
+dot indicator는 주로 하단에 삽입되는 페이지 버튼
+*/
+.main-slider .slick-dots {/*dots 전체 영역 = slick-dots*/
+    font-size:0;
+    position:absolute;
+    left:50%;
+    bottom:20px;
+    transform:translatex(-50%);
+    width:54%;
+    z-index:50;/*배너 이미지보다 앞으로 나와야하기 때문에 z-index 설정*/
+}
+
+.main-slider .slick-dots::after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.main-slider .slick-dots > li {/*각각의 칸 영역 레이아웃 설정*/
+    width:20%;
+    height:auto;
+    padding-left:16px;
+    margin:0;
+    box-sizing:border-box;
+    float:left;
+}
+
+.main-slider .slick-dots > li > button {/*클릭 시 배너 순서에 맞게 배너 이미지 변경*/
+    width:100%;
+    height:2px;
+    background-color:rgba(255,255,255,.3);
+    outline:none;
+    position:relative;
+    padding:0;
+    color:inherit;
+    line-height:normal;
+}
+
+.main-slider .slick-dots > li > button::before {
+    display:none;
+}
+
+.main-slider .slick-dots > li > button > .s-line-fill {/*시간에 따라 채우기 속성을 주기위한 영역*/
+    content:"";
+    width:0;
+    height:2px;
+    background-color:#486bcd;
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:1;
+}
+
+.slider-wrap .slick-dots .slick-active > button > .s-line-fill {
+    animation:slick-progressbar 4s 1;
+    /*slick-progressbar 효과가 4s동안 처음부터 끝까지 일정한 속도로 진행(linear)
+    1. linear, 2. ease, 3. ease-in, 4. ease-out, 5. ease-in-out, 6. cubic-bezier
+    */
+    animation-fill-mode: forwards;
+    /*animation-fill-mode 속성은 애니메이션이 실행되기 전과 후에, 대상에 스타이을 적용하는 방법
+    forward : 대상은 실행 된 애니메이션의 마지막 keyframe에 의해 설정된 계산 된 값을 유지
+    */
+}
+
+/*slick-active 클래스는 사진이 변경될 때마다 이동*/
+/*autoplay = "N"일 때, active된 클래스의 채우기 영역(animate)가 일시정지*/
+.slider-wrap[data-slick-autoplay-status="N"] .slick-dots .slick-active > button > .s-line-fill {
+    animation-play-state:paused;
+    /*animation-play-state 속성은 애니메이션의 진행 상태를 설정
+    pause : 애니메이션의 움직임을 정지
+    */
+}
+
+@keyframes slick-progressbar {
+    0% {
+        width:0%;
+    }
+    100% {
+        width:100%;
+    }
+}
+/* --------------------------------//페이지 버튼-------------------------------- */
+
+/* 페이지 버튼 인디케이터 */
+.main-slider .slick-dots > li > button > .s-indicator {/*hover시 보이는 글씨를 감싸는 영역의 레이아웃 설정*/
+    position:absolute;
+    left:50%;
+    bottom:0;
+    transform:translatex(-50%);
+    width:110%;
+    overflow:hidden;
+}
+
+.main-slider .slick-dots > li > button > .s-indicator > .inner-txt {/*hover시 보이는 글씨 영역의 레이아웃 설정*/
+    font-size:15px;
+    font-weight:bold;
+    white-space:nowrap;/*공백과 줄바꿈 지정 -> nowrap : 공백을 채우지만 줄바꿈이 실행되지 않음*/
+    display:block;
+    width:100%;
+    transform:translatey(100%);
+    opacity:0;
+    transition:all .8s;/*hover 시 느리게 나타나는 효과 지정*/
+    color: #fff;
+}
+
+.main-slider .slick-dots > li > button:hover > .s-indicator > .inner-txt {/*버튼 hover시 변경되는 글씨 영역 레이아웃*/
+    transform:translatey(0);
+    opacity:1;
+    padding-bottom:5px;
+}
+
+/* 오토플레이 버튼 */
+.slider-wrap .s-autoplay-btn {
+    width:12px;
+    height:12px;
+    position:absolute;
+    left:79%;
+    bottom:15px;
+    z-index:50;/*배너 이미지보다 앞으로 나와야하기 때문에 z-index 설정*/
+}
+
+.slider-wrap[data-slick-autoplay-status="Y"] .s-autoplay-btn {/*autoplay가 실행되고 있을 때 버튼 이미지*/
+    background:url('../images/pause_icon.png') no-repeat;
+    background-size:contain;
+}
+
+.slider-wrap[data-slick-autoplay-status="N"] .s-autoplay-btn {/*autoplay가 정지되었을 때 이미지*/
+    background:url('../images/start_icon.png') no-repeat;
+    background-size:contain;
+}
+
+.slider-wrap .slide-dummy {/*slide-dummy가 필요한 이유 <-- 질문*/
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:90%;
+}
+
+/* 메인 슬라이더 반응형 */
+/*vw : viewport의 너비 값에 맞춰 사용하기 위한 단위 -> 1440px에서의 1vw = 14.4px*/
+@media (max-width:1440px){
+    .main-slider .slick-dots > li > button > .s-indicator > .inner-txt {
+        font-size:1vw;
+    }
+    
+    .main-slider .slick-dots > li > button, .main-slider .slick-dots > li > button > .s-line-fill {
+        height:0.15vw;
+    }
+    
+    .main-slider .slick-arrow::before {
+        width:2.5vw;
+        height:3.8vw;
+    }
+}
+
+@media (max-width:770px){
+    .main-slider .slick-arrow {
+        display:none !important;
+    }
+    
+    .main-slider .slick-dots {
+        width:auto;
+        background-color:rgba(0,0,0,.5);
+        padding:4px 6px;
+        padding-right:25px;
+        border-radius:45px;
+    }
+    
+    .main-slider .slick-dots > li {
+        width:auto;
+        margin:0 7px 0 6px;
+        padding-left:0;
+    }
+    
+    .main-slider .slick-dots > li > button {
+        width:8px;
+        height:8px;
+        border-radius:45px;
+        box-sizing:content-box;
+        border:1px solid #fff;
+        background-color:rgba(0,0,0,0);
+    }
+    
+    .main-slider .slick-dots .slick-active > button {
+        background-color:#fff;
+    }
+    
+    .main-slider .slick-dots > li > button > .s-line-fill {
+        width:0;
+        height:1.6vw;
+        border-radius:45px;
+        visibility:hidden;
+    }
+    
+    .slider-wrap .s-autoplay-btn {
+        width:10px;
+        height:10px;
+        left:50%;
+        bottom:24px;
+        margin-left:52px;
+    }
+    
+    .slider-wrap[data-slick-autoplay-status="Y"] .s-autoplay-btn {
+        background:url('https://kimyang-sun.github.io/pf-img/samsung-img/new-home-ico-pause.svg') no-repeat;
+        background-size:contain;
+    }
+
+    .slider-wrap[data-slick-autoplay-status="N"] .s-autoplay-btn {
+        background:url('https://kimyang-sun.github.io/pf-img/samsung-img/new-home-ico-play.svg') no-repeat;
+        background-size:contain;
+    }
+}
+
+/* 반응형 라이브러리 */
+@media (min-width:771px){
+    .only-mobile {
+        display:none;
+    }
+}
+
+@media (max-width:770px){
+    .only-pc {
+        display:none;
+    }
+}

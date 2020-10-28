@@ -1,0 +1,192 @@
+* {margin: 0; padding: 0;}
+ol,ul {list-style: none;}
+a {text-decoration: none; outline: 0;}
+img {border: 0;}
+
+/*----------------------nav_wrapper 영역-----------------------*/
+#header_wrapper{
+    overflow: hidden;
+    width: 100%; height: 142px;
+    background: url(https://ssl.nx.com/S2/membership/2011/global/bg_header.gif) repeat-x left top;
+}
+
+#header_wrapper .header_deco{
+    width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#header_wrapper h1{
+    position: absolute;
+    top: 32px; left: 0;
+    width: 171px; height: 57px;
+    padding: 40px 0 0 18px;
+}
+
+#header_wrapper img{
+    width: 157px; height: 19px;
+}
+
+#header_wrapper ul{
+    position: absolute;
+    top: 32px; left: 190px;
+    overflow: hidden;
+    width: 709px; height: 107px;
+    border-right: 1px solid #ccc;
+    background: url(https://ssl.nx.com/S2/membership/2011/global/nav_membership.gif) no-repeat left top;
+    border-left: 1px solid #ccc;;
+}
+
+#header_wrapper ul li{float: left;}
+
+#header_wrapper ul li a{
+    display: block;
+    width: 180px;
+    height: 107px;
+}
+
+#header_wrapper ul li a span{display: none;}
+
+#header_wrapper ul li .on{background: url(https://ssl.nx.com/S2/membership/2011/global/nav_membership.gif) no-repeat left top;}
+
+#header_wrapper ul .privacy .on{background-position: -180px -107px;}
+
+#header_wrapper ul .qna a{width: 169px;}
+/*-----------------------//nav_wrapper 영역-----------------------*/
+
+/*----------------------content_wrapper 영역----------------------*/
+#content_wrapper{
+    width: 1225px;
+    margin: 0 auto;
+}
+
+/*-----------------------side_section 영역------------------------*/
+#content_wrapper .side_section{
+    float: left;
+    border-right: 1px solid black;
+}
+
+.side_section h3{
+    font-size: 22px;
+    padding: 30px 0;
+    margin-left: 90px;
+}
+
+/*------------------------top_section 영역-----------------------*/
+.side_section .top_section{
+    font-size: 17px;
+    padding: 30px 50px 60px 40px;
+    margin-left: 50px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.top_section li{margin-bottom: 20px;}
+
+.top_section a:active{color: rgb(23, 29, 25);}
+.top_section a:link{color: rgb(23, 29, 25);}
+.top_section a:visited{color: rgb(23, 29, 25);}
+.top_section a:hover{color: #486bcd;}
+.top_section li:nth-of-type(3) a{color: #486bcd; font-weight: bold;}
+
+/*----------------------bottom_section 영역----------------------*/
+.side_section .bottom_section{
+    height: 100px;
+    font-size: 17px;
+    padding: 20px 0 100px 40px;
+    margin-left: 50px;
+}
+
+.bottom_section li{
+    height: 30px;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.bottom_section li img{
+    float: left;
+    margin-right: 5px;
+}
+
+.bottom_section a:active{color: rgb(23, 29, 25);}
+.bottom_section a:link{color: rgb(23, 29, 25);}
+.bottom_section a:visited{color: rgb(23, 29, 25);}
+.bottom_section a:hover{color: #486bcd;}
+/*----------------------//side_section 영역----------------------*/
+
+/*-------------------------login_set 영역-------------------------*/
+#content_wrapper .cache_set{
+    float: left;
+    width: 820px; height: 529px;
+}
+
+/*-----------------------login_set_tit 영역-----------------------*/
+.cache_set .cache_set_tit{
+    margin: 40px 50px;
+}
+
+.cache_set_tit h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.cache_set_tit p{color: gray; font-size: 13px;}
+
+/*-------------------------more_info 영역-------------------------*/
+#content_wrapper .more_info{
+    width: 740px;
+    margin: 20px 50px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding-bottom: 40px;
+    background: url(../images/cache_set_bg.png) no-repeat 540px 30px;
+}
+
+.more_info span{
+    display: block;
+    margin-top: 20px;
+}
+
+.more_info .blue_tit{
+    font-size: 23px;
+    color: #486bcd;
+    font-weight: bold;
+}
+
+.more_info .small_tit{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.more_info .explain_1{
+    font-size: 14px;
+    color: #666;
+}
+
+
+.cache_set .set_btn{
+    width: 220px; height: 45px;
+    color: white;
+    background-color: #486bcd;
+    border: 1px solid #486bcd;
+    margin: 0 300px;
+}
+
+/*------------------------//login_set 영역------------------------*/
+
+/*--------------------//content_wrapper 영역---------------------*/
+
+/*--------------------------footer 영역--------------------------*/
+footer{
+    width: 100%; height: 120px;
+    border-top: 1px solid black;
+    float: left;
+}
+
+footer p {
+    text-align: center;
+    margin: 55px 0;
+}
+/*-------------------------//footer 영역-------------------------*/
+
+

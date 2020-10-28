@@ -1,0 +1,221 @@
+* {margin: 0; padding: 0;}
+ol,ul {list-style: none;}
+a {text-decoration: none; outline: 0;}
+img {border: 0;}
+
+@media (max-width:375px){
+/*--------------------------gnb_wrapper 영역--------------------------*/
+#gnb_wrapper{
+    height: 70px;
+    background-color: #fff;
+    position: relative;
+}
+
+.left_gnb{
+    height: 100%;
+    float: left;
+    line-height: 70px;
+    padding-left: 10px;
+}
+
+.left_gnb .menu_icon{
+    position: relative;
+    display: inline-block;
+    width: 1.0em;
+    height: 0.6em;
+    margin-right: 0.1em;
+    border-top: 0.2em solid rgb(23, 29, 25);
+    border-bottom: 0.2em solid rgb(23, 29, 25);
+}
+
+.left_gnb .menu_icon:before{
+    content: "";
+    position: absolute;
+    top: 0.2em;
+    left: 0px;
+    width: 100%;
+    border-top: 0.2em solid rgb(23, 29, 25);
+}
+
+.left_gnb .menu_font{
+    font-size: 14px;
+    color: rgb(23, 29, 25);
+    font-weight: bold;
+}
+
+.logo_gnb{
+    height: 100%;
+    text-align: center;
+}
+
+.logo_gnb img{
+    width: 90px;
+    padding-top: 23px;
+    margin-left: -75px;
+}
+
+.right_gnb{
+    height: 100%;
+    position: absolute;
+    top: 0; right: 0;
+    line-height: 70px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.right_gnb .join_gnb{float: left; margin-right: 5px;}
+.right_gnb .login_gnb{float: left;margin-right: 5px;}
+
+.login_gnb a{
+    border: 2px solid rgb(23, 29, 25);
+    padding: 5px 10px;
+    border-radius: 2em;
+    color: rgb(23, 29, 25);
+}
+.login_gnb a:hover{color: #486bcd; border-color: #486bcd;}
+
+.join_gnb a{color: rgb(23, 29, 25);}
+.join_gnb a:hover{color: #486bcd;}
+/*-------------------------//gnb_wrapper 영역-------------------------*/
+
+/*------------------------promotion_banner 영역------------------------*/
+#promotion_banner{
+height: 200px;
+background-image: url("../images/banner_main.PNG");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+#promotion_banner h2{display: none;}
+/*-----------------------//promotion_banner 영역-----------------------*/
+
+/*-----------------------//promotion_banner 영역-----------------------*/
+
+#middle_wrapper{
+    width: 100%;
+    position: relative;
+}
+
+/*--------------------------game_wrapper 영역--------------------------*/
+#game_wrapper{
+    width: 100%; height: 1750px;
+    background-color: #f8f9fa;
+    position: absolute;
+    top: 0; left: 0;
+}
+
+#game_wrapper h2{
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.pc_game{width: 100%; height: 670px;}
+
+.pc_game ul li{
+    display: block;
+    width: 70%; height: 270px;
+    margin-top: 25px;
+    background-color: white;
+    padding: 5px;
+    margin-left: 50px;
+}
+
+.pc_game ul li a strong{
+    display: block;
+    font-size: 16px;
+    color: black;
+}
+
+.pc_game ul li:first-child{margin-left: 50px;}
+
+.pc_game ul li p{ color: gray; font-size: 11px;}
+.pc_game ul li p:last-child{
+border-top: 1px solid gray;
+margin-top: 10px;
+padding-top: 10px;
+}
+
+.pc_game img{width: 100%;}
+
+#game_wrapper .mobile_game{visibility: visible;}
+
+.mobile_game{
+    width: 100%; height: 1000px;
+}
+
+.mobile_game ul li{
+    display: block;
+    width: 70%; height: 270px;
+    margin-top: 25px;
+    background-color: white;
+    padding: 5px;
+    margin-left: 50px;
+}
+
+.mobile_game ul li:first-child{margin-left: 50px;}
+
+.mobile_game ul li a strong{
+    display: block;
+    font-size: 16px;
+    color: black;
+}
+
+.mobile_game ul li p{ color: gray; font-size: 11px;}
+.mobile_game ul li p:last-child{
+border-top: 1px solid gray;
+margin-top: 10px;
+padding-top: 10px;
+}
+
+.mobile_game img{width: 100%;}
+/*-------------------------//game_wrapper 영역-------------------------*/
+
+/*--------------------------info_wrapper 영역--------------------------*/
+#info_wrapper{
+    display: none;
+    width: 100%; height: 100%;
+    background-color: #f8f9fa;
+    position: absolute;
+    top:700px; left: 0;
+}
+/*-------------------------//info_wrapper 영역-------------------------*/
+
+/*--------------------------main_footer 영역--------------------------*/
+#main_footer{
+    position: absolute;
+    top: 2010px;
+    height: 190px;
+    background-color: #222426;
+    color: #fff;
+}
+
+#main_footer .left{
+    float: left;
+    margin-left: 10px;
+    padding-top: 30px;
+    font-size: 10px;
+}
+
+.left ul{display: none;}
+
+#main_footer .right{
+    width: 100%; height: 90px;
+    float: left;
+    margin-right: 50px;
+    padding-top: 40px;
+}
+
+.right .sns{
+    float: left;
+    margin: 25px 0 20px 10px;
+}
+
+.right img{
+    margin-top: 10px;
+    float: right;
+}
+/*-------------------------//main_footer 영역-------------------------*/
+}
+    

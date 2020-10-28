@@ -1,0 +1,411 @@
+* {margin: 0; padding: 0;}
+ol,ul {list-style: none;}
+a {text-decoration: none; outline: 0;}
+img {border: 0;}
+body{background-color: #fafafa;}
+
+/*--------------------------gnb_wrapper 영역--------------------------*/
+#gnb_wrapper{
+    height: 70px;
+    background-color: #fff;
+    position: relative;
+}
+
+.left_gnb{
+    height: 100%;
+    float: left;
+    line-height: 70px;
+    padding-left: 50px;
+}
+
+.left_gnb .menu_icon{
+    position: relative;
+    display: inline-block;
+    width: 1.25em;
+    height: 0.8em;
+    margin-right: 0.3em;
+    border-top: 0.2em solid rgb(23, 29, 25);
+    border-bottom: 0.2em solid rgb(23, 29, 25);
+}
+
+.left_gnb .menu_icon:before{
+    content: "";
+    position: absolute;
+    top: 0.3em;
+    left: 0px;
+    width: 100%;
+    border-top: 0.2em solid rgb(23, 29, 25);
+}
+
+.left_gnb .menu_font{
+    font-size: 20px;
+    color: rgb(23, 29, 25);
+    font-weight: bold;
+}
+
+.logo_gnb{
+    height: 100%;
+    text-align: center;
+}
+
+.logo_gnb img{
+    width: 170px;
+    padding-top: 10px;
+    margin-left: -150px;
+}
+
+.right_gnb{
+    height: 100%;
+    position: absolute;
+    top: 0; right: 0;
+    line-height: 70px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.right_gnb .join_gnb{float: left; margin-right: 50px;}
+.right_gnb .login_gnb{float: left;margin-right: 50px;}
+
+.login_gnb a{
+    border: 2px solid rgb(23, 29, 25);
+    padding: 10px 30px;
+    border-radius: 2em;
+    color: rgb(23, 29, 25);
+}
+.login_gnb a:hover{color: #486bcd; border-color: #486bcd;}
+
+.join_gnb a{color: rgb(23, 29, 25);}
+.join_gnb a:hover{color: #486bcd;}
+
+/*-------------------------//gnb_wrapper 영역-------------------------*/
+
+/*---------------------------login_bg 영역---------------------------*/
+#login_bg{
+    width: 600px; height: 890px;
+    margin: 0 auto;
+}
+
+/*------------------------login_wrapper 영역------------------------*/
+#login_bg #login_wrapper{
+    width: 600px; height: 450px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+#login_wrapper h1{
+    font-size: 40px;
+    padding: 20px 0;
+}
+
+#login_wrapper .id_save_wrapper{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+input[type="checkbox"]{width: 16px; height: 16px;}
+
+#login_wrapper .input_wrapper{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.input_wrapper label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input_wrapper input{
+    width: 595px; height: 50px;
+    border-radius: 0.5em;
+    border: 1px solid gray;
+    font-size: 18px;
+}
+.login_btn{
+    width: 595px; height: 60px;
+    margin-left: 2.5px;
+    margin-top: 30px;
+    font-size: 20px;
+    border: 1px solid #4160b8;
+    background-color: #486bcd;
+    color: #fff;
+}
+
+#login_wrapper .other_menu{
+    width: 100%; height: 40px;
+    margin-top: 5px;
+}
+
+.other_menu a{color: #000;}
+.other_menu a:hover{color: #486bcd;}
+
+/*-----------------------//login_wrapper 영역-----------------------*/
+
+/*------------------------other_login 영역------------------------*/
+#login_bg #other_login{
+    width: 600px; height: 350px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+#other_login .for_title{
+    display: flex;
+	flex-basis: 100%;
+	align-items: center;
+	color: rgba(0, 0, 0, 0.35);
+	font-size: 20px;
+	margin: 8px 0px;
+}
+
+.for_title::before,.for_title::after{
+    content: "";
+	flex-grow: 1;
+	background: rgba(0, 0, 0, 0.35);
+	height: 1px;
+	font-size: 0px;
+	line-height: 0px;
+	margin: 0px 10px;
+}
+
+#other_login .other_btn_wrap{
+    height: 300px;
+    text-align: left;
+}
+
+.other_btn_wrap li{
+    width: 100%; height: 65px;
+    margin-bottom: 15px;
+}
+
+.other_btn_wrap li a{
+    display: block;
+    border: 1px solid #c8c8c8;
+    background-color: #fff;
+}
+
+.other_btn_wrap img{
+    vertical-align: top;
+    margin-left: 30px;
+}
+
+.other_btn_wrap li a:hover{
+    border: 1px solid #486bcd;
+}
+
+/*-----------------------//other_login 영역-----------------------*/
+
+/*--------------------------//login_bg 영역--------------------------*/
+
+/*--------------------------footer 영역--------------------------*/
+footer{
+    width: 100%; height: 120px;
+}
+
+footer p {
+    text-align: center;
+    margin: 50px 0;
+}
+/*-------------------------//footer 영역-------------------------*/
+
+@media (max-width:375px){
+    /*--------------------------gnb_wrapper 영역--------------------------*/
+    #gnb_wrapper{
+        width: 375px; height: 70px;
+        background-color: #fff;
+        position: relative;
+    }
+    
+    .left_gnb{
+        height: 100%;
+        float: left;
+        line-height: 70px;
+        padding-left: 10px;
+    }
+    
+    .left_gnb .menu_icon{
+        position: relative;
+        display: inline-block;
+        width: 1.0em;
+        height: 0.6em;
+        margin-right: 0.1em;
+        border-top: 0.2em solid rgb(23, 29, 25);
+        border-bottom: 0.2em solid rgb(23, 29, 25);
+    }
+    
+    .left_gnb .menu_icon:before{
+        content: "";
+        position: absolute;
+        top: 0.2em;
+        left: 0px;
+        width: 100%;
+        border-top: 0.2em solid rgb(23, 29, 25);
+    }
+    
+    .left_gnb .menu_font{
+        font-size: 14px;
+        color: rgb(23, 29, 25);
+        font-weight: bold;
+    }
+    
+    .logo_gnb{
+        height: 100%;
+        text-align: center;
+    }
+    
+    .logo_gnb img{
+        width: 90px;
+        padding-top: 23px;
+        margin-left: -75px;
+    }
+    
+    .right_gnb{
+        height: 100%;
+        position: absolute;
+        top: 0; right: 0;
+        line-height: 70px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    
+    .right_gnb .join_gnb{float: left; margin-right: 5px;}
+    .right_gnb .login_gnb{float: left;margin-right: 5px;}
+    
+    .login_gnb a{
+        border: 2px solid rgb(23, 29, 25);
+        padding: 5px 10px;
+        border-radius: 2em;
+        color: rgb(23, 29, 25);
+    }
+    .login_gnb a:hover{color: #486bcd; border-color: #486bcd;}
+    
+    .join_gnb a{color: rgb(23, 29, 25);}
+    .join_gnb a:hover{color: #486bcd;}
+    /*-------------------------//gnb_wrapper 영역-------------------------*/
+
+    /*---------------------------login_bg 영역---------------------------*/
+    #login_bg{
+        height: 800px;
+        margin: 0 auto;
+    }
+
+    /*------------------------login_wrapper 영역------------------------*/
+    #login_bg #login_wrapper{
+        height: 420px;
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+
+    #login_wrapper h1{
+        font-size: 30px;
+        padding: 20px 0;
+    }
+
+    #login_wrapper .id_save_wrapper{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    input[type="checkbox"]{width: 12px; height: 12px;}
+
+    #login_wrapper .input_wrapper{
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    .input_wrapper label{
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .input_wrapper input{
+        width: 353px; height: 40px;
+        border-radius: 0.5em;
+        border: 1px solid gray;
+        font-size: 14px;
+    }
+    .login_btn{
+        width: 353px; height: 50px;
+        margin-left: 2.5px;
+        margin-top: 20px;
+        font-size: 20px;
+        border: 1px solid #4160b8;
+        background-color: #486bcd;
+        color: #fff;
+    }
+
+    #login_wrapper .other_menu{
+        width: 100%; height: 40px;
+        margin-top: 5px;
+        font-size: 14px;
+    }
+
+    .other_menu a{color: #000;}
+    .other_menu a:hover{color: #486bcd;}
+
+    /*-----------------------//login_wrapper 영역-----------------------*/
+
+    /*------------------------other_login 영역------------------------*/
+    #login_bg #other_login{
+        width: 353px; height: 350px;
+        margin-left: 10px;
+        margin-bottom: 80px;
+    }
+
+    #other_login .for_title{
+        display: flex;
+        flex-basis: 100%;
+        align-items: center;
+        color: rgba(0, 0, 0, 0.35);
+        font-size: 15px;
+        margin: 8px 0px;
+    }
+
+    .for_title::before,.for_title::after{
+        content: "";
+        flex-grow: 1;
+        background: rgba(0, 0, 0, 0.35);
+        height: 1px;
+        font-size: 0px;
+        line-height: 0px;
+        margin: 0px 10px;
+    }
+
+    #other_login .other_btn_wrap{
+        height: 300px;
+        text-align: left;
+    }
+
+    .other_btn_wrap li{
+        width: 353px; height: 55px;
+        margin-bottom: 15px;
+    }
+
+    .other_btn_wrap li a{
+        display: block;
+        border: 1px solid #c8c8c8;
+        background-color: #fff;
+    }
+
+    .other_btn_wrap img{
+        width: 300px;
+        vertical-align: top;
+        margin-left: 40px;
+    }
+
+    /*-----------------------//other_login 영역-----------------------*/
+
+    /*--------------------------//login_bg 영역--------------------------*/
+
+    /*--------------------------footer 영역--------------------------*/
+    footer{
+        width: 100%; height: 120px;
+        font-size: 12px;
+    }
+
+    footer p {
+        text-align: center;
+        margin: 50px 0;
+    }
+    /*-------------------------//footer 영역-------------------------*/
+
+}

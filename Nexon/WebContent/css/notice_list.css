@@ -1,0 +1,497 @@
+* {
+    margin: 0; padding: 0; 
+    border-radius: 0;
+    box-sizing: border-box; 
+}
+ol,ul {list-style: none;}
+a {text-decoration: none; outline: 0;}
+img {border: 0;}
+
+a:active{color: rgb(23, 29, 25);}
+a:link{color: rgb(23, 29, 25);}
+a:visited{color: rgb(23, 29, 25);}
+a:hover{color: rgb(23, 29, 25);}
+
+/*--------------------------gnb_wrapper 영역--------------------------*/
+#gnb_wrapper{
+    height: 70px;
+    background-color: #fff;
+    position: relative;
+}
+
+.left_gnb{
+    height: 100%;
+    float: left;
+    line-height: 70px;
+    padding-left: 50px;
+}
+
+.left_gnb .menu_icon{
+    position: relative;
+    display: inline-block;
+    width: 1.25em;
+    height: 0.8em;
+    margin-right: 0.3em;
+    border-top: 0.2em solid rgb(23, 29, 25);
+    border-bottom: 0.2em solid rgb(23, 29, 25);
+    box-sizing: unset;
+}
+
+.left_gnb .menu_icon:before{
+    content: "";
+    position: absolute;
+    top: 0.3em;
+    left: 0px;
+    width: 100%;
+    border-top: 0.2em solid rgb(23, 29, 25);
+}
+
+.left_gnb .menu_font{
+    font-size: 20px;
+    color: rgb(23, 29, 25);
+    font-weight: bold;
+}
+
+.logo_gnb{
+    height: 100%;
+    text-align: center;
+}
+
+.logo_gnb img{
+    width: 170px;
+    padding-top: 10px;
+    margin-left: -150px;
+}
+
+.right_gnb{
+    height: 100%;
+    position: absolute;
+    top: 0; right: 0;
+    line-height: 70px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.right_gnb .join_gnb{float: left; margin-right: 50px;}
+.right_gnb .login_gnb{float: left;margin-right: 50px;}
+
+.login_gnb a{
+    border: 2px solid rgb(23, 29, 25);
+    padding: 10px 30px;
+    border-radius: 2em;
+    color: rgb(23, 29, 25);
+}
+.login_gnb a:hover{color: #486bcd; border-color: #486bcd;}
+
+.join_gnb a{color: rgb(23, 29, 25);}
+.join_gnb a:hover{color: #486bcd;}
+/*-------------------------//gnb_wrapper 영역-------------------------*/
+
+/*--------------------------a 태그 영역--------------------------*/
+#nav_wrapper a:active{color: rgb(23, 29, 25);}
+#nav_wrapper a:link{color: gray;}
+#nav_wrapper a:visited{color: gray;}
+#nav_wrapper a:hover{color: #486bcd;}
+/*-------------------------//a 태그 영역-------------------------*/
+
+/*--------------------------nav_wrapper 영역--------------------------*/
+#nav_wrapper{
+    width: 100%; height: 100px;
+    background-color: #fff;
+}
+
+#nav_wrapper ul{
+    text-align: center;
+    line-height: 100px;
+}
+
+#nav_wrapper ul li{
+    display: inline;
+    font-size: 22px;
+    margin: 0 30px;
+}
+
+#nav_wrapper ul li a{font-weight: bold;}
+
+#nav_wrapper ul li:nth-last-of-type(3){border-bottom: 2px solid rgb(23, 29, 25);}
+#nav_wrapper ul li:nth-last-of-type(3) a{color: rgb(23, 29, 25);}
+/*-------------------------//nav_wrapper 영역-------------------------*/
+
+/*--------------------------list_wrapper 영역--------------------------*/
+#list_wrapper{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 35px 100px;
+    position: relative;
+    border-top: 1px solid lightgray;
+}
+
+#list_wrapper h1{
+    height: 155px;
+    padding-top: 79px;
+    font-size: 40px;
+    color: #17191d;
+}
+
+/*--------------------------notice_list 영역--------------------------*/
+/*#list_wrapper .notice_list{}*/
+
+.notice_list table{
+    width: 100%;
+    border-collapse: collapse;/*무슨뜻?*/
+    border-spacing: 0;/*무슨뜻?*/
+}
+
+.notice_list caption{
+    position: absolute;
+    z-index: -1;
+    visibility: hidden;
+}
+
+.notice_list colgroup{display: table-column-group;}/*무슨뜻?*/
+
+.notice_list thead{
+    position: absolute;
+    z-index: -1;
+    visibility: hidden;
+}
+
+.notice_list tbody{border-top: 3px solid #17191d;}
+
+.notice_list tr{
+    height: 80px;
+    border-bottom: 1px solid #dde1e5;
+    cursor: pointer;
+    display: table-row;/*무슨뜻?*/
+}
+
+.notice_list td{
+    padding-bottom: 2px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.notice_list td a{color: #363940;}
+
+.notice_list .icon{
+    display: inline-block;
+    background: transparent url(https://rs.nxfs.nexon.com/notice/images/set_notice.png) 0 0 no-repeat;
+}
+
+.notice_list .cate{font-size: 20px; color: gray;}
+.notice_list .tit{
+    padding-top: 4px;
+    padding-left: 5px;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 550;
+}
+.notice_list .date{font-size: 18px; color: gray;}
+.notice_list .count{
+    text-align: right;
+    padding-right: 30px;
+    font-size: 18px;
+    color: gray;
+}
+.notice_list td.count .icon{
+    width: 18px;
+    height: 12px;
+    background-position: 0 -50px;
+    background-color: #a1a3a9;
+    margin: 8px 0 0 3px;
+}
+/*-------------------------//notice_list 영역-------------------------*/
+
+/*---------------------------page_list 영역---------------------------*/
+#list_wrapper .page_list{
+    padding-top: 80px;
+    text-align: center;
+}
+
+.page_list a{color: #737881;}
+
+.page_list .icon{
+    display: inline-block;
+    background: transparent url(https://rs.nxfs.nexon.com/notice/images/set_notice.png) 0 0 no-repeat;
+}
+
+.page_list .achidden{
+    position: absolute;
+    overflow: hidden;
+    width: 1px; height: 1px;
+    margin: -1px;
+}
+
+.page_list .first_btn, .page_list .prev_btn, .page_list .next_btn, .page_list .last_btn{
+    display: inline-block;
+    height: 32px;
+    width: 23px;
+    padding-top: 10px;
+    margin: 0 2px;
+}
+
+.page_list .first_btn .icon{
+    position: relative;
+    width: 18px; height: 12px;
+    background-position: 0 -100px;
+    background-color: #9fa1a7;
+    /*transition: all .15s linear;*/
+}
+
+.page_list .prev_btn .icon{
+    position: relative;
+    width: 8px; height: 12px;
+    background-position: 0 -150px;
+    background-color: #9fa1a7;
+}
+
+.page_list .page_num{padding: 0 9px 0 8px;}
+.page_num a, .page_num strong{
+    display: inline-block;
+    width: 32px; height: 32px;
+    padding: 6px 6px 0;
+    margin: 0 1px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+}
+.page_num strong{
+    color: #fff;
+    background-color: #17191d;
+}
+.page_num a{color: #9fa1a7;}
+
+.page_list .next_btn .icon{
+    position: relative;
+    width: 8px; height: 12px;
+    background-position: -50px -150px;
+    background-color: #9fa1a7;
+}
+.page_list .last_btn .icon{
+    position: relative;
+    width: 18px; height: 12px;
+    background-position: -50px -100px;
+    background-color: #9fa1a7;
+}
+/*--------------------------//page_list 영역--------------------------*/
+/*-------------------------//list_wrapper 영역-------------------------*/
+
+/*--------------------------footer 영역--------------------------*/
+footer{
+    width: 100%; height: 120px;
+}
+
+footer p {
+    text-align: center;
+    margin: 50px 0;
+}
+/*-------------------------//footer 영역-------------------------*/
+
+
+@media (max-width:375px){
+/*--------------------------gnb_wrapper 영역--------------------------*/
+#gnb_wrapper{
+    width: 375px; height: 70px;
+    background-color: #fff;
+    position: relative;
+}
+
+.left_gnb{
+    height: 100%;
+    float: left;
+    line-height: 70px;
+    padding-left: 10px;
+}
+
+.left_gnb .menu_icon{
+    position: relative;
+    display: inline-block;
+    width: 1.0em;
+    height: 0.6em;
+    margin-right: 0.1em;
+    border-top: 0.2em solid rgb(23, 29, 25);
+    border-bottom: 0.2em solid rgb(23, 29, 25);
+}
+
+.left_gnb .menu_icon:before{
+    content: "";
+    position: absolute;
+    top: 0.2em;
+    left: 0px;
+    width: 100%;
+    border-top: 0.2em solid rgb(23, 29, 25);
+}
+
+.left_gnb .menu_font{
+    font-size: 14px;
+    color: rgb(23, 29, 25);
+    font-weight: bold;
+}
+
+.logo_gnb{
+    height: 100%;
+    text-align: center;
+}
+
+.logo_gnb img{
+    width: 90px;
+    padding-top: 23px;
+    margin-left: -75px;
+}
+
+.right_gnb{
+    height: 100%;
+    position: absolute;
+    top: 0; right: 0;
+    line-height: 70px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.right_gnb .join_gnb{float: left; margin-right: 5px;}
+.right_gnb .login_gnb{float: left;margin-right: 5px;}
+
+.login_gnb a{
+    border: 2px solid rgb(23, 29, 25);
+    padding: 5px 10px;
+    border-radius: 2em;
+    color: rgb(23, 29, 25);
+}
+.login_gnb a:hover{color: #486bcd; border-color: #486bcd;}
+
+.join_gnb a{color: rgb(23, 29, 25);}
+.join_gnb a:hover{color: #486bcd;}
+/*-------------------------//gnb_wrapper 영역-------------------------*/
+
+/*--------------------------a 태그 영역--------------------------*/
+#nav_wrapper a:active{color: rgb(23, 29, 25);}
+#nav_wrapper a:link{color: gray;}
+#nav_wrapper a:visited{color: gray;}
+#nav_wrapper a:hover{color: #486bcd;}
+/*-------------------------//a 태그 영역-------------------------*/
+
+/*--------------------------nav_wrapper 영역--------------------------*/
+#nav_wrapper{
+    width: 375px; height: 100px;
+    background-color: #fff;
+}
+
+#nav_wrapper ul li{
+    display: inline;
+    margin: 0 15px;
+    font-size: 18px;
+}
+/*-------------------------//nav_wrapper 영역-------------------------*/
+
+/*--------------------------list_wrapper 영역--------------------------*/
+#list_wrapper{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px 100px;
+    position: relative;
+    border-top: 1px solid lightgray;
+}
+
+#list_wrapper h1{
+    height: 100px;
+    padding-top: 50px;
+    font-size: 25px;
+    color: #17191d;
+}
+
+/*--------------------------notice_list 영역--------------------------*/
+.notice_list caption{
+    position: absolute;
+    z-index: -1;
+    visibility: hidden;
+}
+
+.notice_list colgroup{display: table-column-group;}/*무슨뜻?*/
+
+.notice_list thead{
+    position: absolute;
+    z-index: -1;
+    visibility: hidden;
+}
+
+.notice_list tbody{border-top: 3px solid #17191d;}
+
+.notice_list tr{
+    height: 100px;
+    border-bottom: 1px solid #dde1e5;
+    cursor: pointer;
+    display: table-row;/*무슨뜻?*/
+}
+
+.notice_list td{
+    padding-bottom: 2px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.notice_list td a{color: #363940;}
+
+.notice_list .icon{
+    display: inline-block;
+    background: transparent url(https://rs.nxfs.nexon.com/notice/images/set_notice.png) 0 0 no-repeat;
+}
+
+.notice_list .cate{
+    width: 100%;
+    font-size: 15px; 
+    color: gray; 
+    display: block; 
+    float: left;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.notice_list .tit{
+    width: 100%;
+    display: block;
+    padding-left: 5px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 550;
+    float: left;
+}
+
+.notice_list .date{
+    font-size: 14px; 
+    color: gray; 
+    display: block;
+    float: left;
+    margin: 15px 0 0 50px;
+}
+
+.notice_list .count{
+    text-align: right;
+    padding-right: 50px;
+    font-size: 14px;
+    color: gray;
+    display: block;
+    float: right;
+}
+.notice_list td.count .icon{
+    width: 18px;
+    height: 12px;
+    background-position: 0 -50px;
+    background-color: #a1a3a9;
+    margin: 17px 0 0 3px;
+}
+/*-------------------------//notice_list 영역-------------------------*/
+/*-------------------------//list_wrapper 영역-------------------------*/
+
+/*--------------------------footer 영역--------------------------*/
+footer{
+    width: 100%; height: 120px;
+    font-size: 12px;
+}
+
+footer p {
+    text-align: center;
+    margin: 50px 0;
+}
+/*-------------------------//footer 영역-------------------------*/
+}
+

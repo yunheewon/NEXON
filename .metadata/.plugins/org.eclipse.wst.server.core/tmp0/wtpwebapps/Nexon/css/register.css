@@ -1,0 +1,214 @@
+* {margin: 0; padding: 0;}
+ol,ul {list-style: none;}
+a {text-decoration: none; outline: 0;}
+img {border: 0;}
+
+/*--------------------------gnb_wrapper 영역--------------------------*/
+#gnb_wrapper{
+    width: 100%; height: 70px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#gnb_wrapper .logo{
+    float: left;
+    margin-left: 20%;
+}
+
+#gnb_wrapper .side_menu{
+    float: right;
+    overflow: hidden;
+    margin-top: 25px;
+    margin-right: 20%;
+}
+
+.side_menu li{
+    float: left;
+    margin-left: -1px;
+    padding: 0 8px 0 7px;
+}
+
+.side_menu li a{color: #000;}
+.side_menu li a:hover{color: #486bcd;}
+/*-------------------------//gnb_wrapper 영역-------------------------*/
+
+/*--------------------------info_wrapper 영역--------------------------*/
+#info_wrapper{
+    width: 550px; 
+    margin: 0 auto;
+}
+
+#info_wrapper h1{
+    text-align: center;
+    padding: 40px 0 30px 0;
+    font-weight: 500;
+    border-bottom: 1px solid lightgray;
+}
+
+/*------------------------info_wrapper 공통 영역------------------------*/
+#info_wrapper .info_title{
+    font-size: 18px;
+    margin: 10px 0 5px 0;
+}
+
+input[type="password"]{
+    width: 75%; height: 40px;
+    border-radius: 0.5em;
+    border: 1px solid gray;
+}
+
+input[type="text"]{
+    width: 75%; height: 40px;
+    border-radius: 0.5em;
+    border: 1px solid gray;
+}
+
+input[type="email"]{
+    width: 75%; height: 40px;
+    border-radius: 0.5em;
+    border: 1px solid gray;
+}
+
+#info_wrapper .overlap_btn{
+    width: 20%; height: 38px;
+    margin-left: 7px;
+    border: 1px solid #5a6ff2;
+    color: #fff;
+    background-color: #6e81df;
+    font-size: 15px;
+}
+/*-----------------------//info_wrapper 공통 영역-----------------------*/
+
+/*-----------------------------id_wrap 영역-----------------------------*/
+#info_wrapper .id_wrap{
+    height: 80px;
+    margin-top: 20px;
+}
+
+/*-----------------------------pwd_wrap 영역-----------------------------*/
+#info_wrapper .pwd_wrap{height: 80px;}
+
+/*-----------------------------pwd_conf 영역-----------------------------*/
+#info_wrapper .pwd_conf{height: 100px;}
+
+/*---------------------------nickname_wrap 영역---------------------------*/
+#info_wrapper .nickname_wrap{height: 80px;}
+
+/*----------------------------email_wrap 영역----------------------------*/
+#info_wrapper .email_wrap{
+    height: 80px;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 20px;
+}
+
+/*---------------------------next_btn_wrap 영역---------------------------*/
+#info_wrapper .next_btn_wrap{
+    text-align: center;
+    margin: 60px 0;
+}
+
+.next_btn_wrap .next_btn{
+    width: 200px; height: 50px;
+    border: 1px solid #5a6ff2;
+    color: #fff;
+    background-color: #6e81df;
+    font-size: 18px;
+    font-weight: bold;   
+}
+/*-------------------------//info_wrapper 영역-------------------------*/
+
+/*--------------------------footer 영역--------------------------*/
+footer{
+    width: 100%; height: 120px;
+}
+
+footer p {
+    text-align: center;
+    margin: 50px 0;
+}
+/*-------------------------//footer 영역-------------------------*/
+
+
+@media (max-width:375px){
+/*--------------------------gnb_wrapper 영역--------------------------*/
+#gnb_wrapper{width: 375px;}
+
+hr{width: 375px;}
+
+#gnb_wrapper .logo{
+    margin: 0%;
+    margin-top: 10px;
+}
+
+.logo img{width: 150px;}
+
+#gnb_wrapper .side_menu{
+    margin-right: 2%;
+    font-size: 12px;
+    margin-top: 27px;
+}
+/*-------------------------//gnb_wrapper 영역-------------------------*/
+
+/*--------------------------info_wrapper 영역--------------------------*/
+#info_wrapper{
+    width: 375px; 
+    margin: 0 auto;
+}
+
+#info_wrapper h1{
+    font-size: 25px;
+}
+
+/*------------------------info_wrapper 공통 영역------------------------*/
+#info_wrapper .info_title{
+    font-size: 14px;
+    margin: 10px 0 5px 10px;
+}
+
+input[type="password"]{
+    width: 70%; height: 35px;
+    margin-left: 10px;
+}
+
+input[type="text"]{
+    width: 70%; height: 35px;
+    margin-left: 10px;
+}
+
+input[type="email"]{
+    width: 70%; height: 35px;
+    margin-left: 10px;
+}
+
+#info_wrapper .overlap_btn{
+    font-size: 14px;
+}
+/*-----------------------//info_wrapper 공통 영역-----------------------*/
+
+/*-----------------------------id_wrap 영역-----------------------------*/
+#info_wrapper .id_wrap{
+    height: 80px;
+    margin-top: 20px;
+}
+/*---------------------------next_btn_wrap 영역---------------------------*/
+#info_wrapper .next_btn_wrap{
+    text-align: center;
+    margin: 60px 0;
+}
+
+.next_btn_wrap .next_btn{
+    width: 150px; 
+    font-size: 15px;
+}
+/*-------------------------//info_wrapper 영역-------------------------*/
+
+/*--------------------------footer 영역--------------------------*/
+footer{
+    width: 100%; height: 120px;
+}
+
+footer p {
+    font-size: 12px;
+}
+/*-------------------------//footer 영역-------------------------*/
+}

@@ -1,0 +1,490 @@
+* {margin: 0; padding: 0;}
+ol,ul {list-style: none;}
+a {text-decoration: none; outline: 0;}
+img {border: 0;}
+
+/*--------------------------gnb_wrapper 영역--------------------------*/
+#gnb_wrapper{
+    height: 70px;
+    background-color: #fff;
+    position: relative;
+}
+
+.left_gnb{
+    height: 100%;
+    float: left;
+    line-height: 70px;
+    padding-left: 50px;
+}
+
+.left_gnb .menu_icon{
+    position: relative;
+    display: inline-block;
+    width: 1.25em;
+    height: 0.8em;
+    margin-right: 0.3em;
+    border-top: 0.2em solid rgb(23, 29, 25);
+    border-bottom: 0.2em solid rgb(23, 29, 25);
+}
+
+.left_gnb .menu_icon:before{
+    content: "";
+    position: absolute;
+    top: 0.3em;
+    left: 0px;
+    width: 100%;
+    border-top: 0.2em solid rgb(23, 29, 25);
+}
+
+.left_gnb .menu_font{
+    font-size: 20px;
+    color: rgb(23, 29, 25);
+    font-weight: bold;
+}
+
+.logo_gnb{
+    height: 100%;
+    text-align: center;
+}
+
+.logo_gnb img{
+    width: 170px;
+    padding-top: 10px;
+    margin-left: -150px;
+}
+
+.right_gnb{
+    height: 100%;
+    position: absolute;
+    top: 0; right: 0;
+    line-height: 70px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.right_gnb .join_gnb{float: left; margin-right: 50px;}
+.right_gnb .login_gnb{float: left;margin-right: 50px;}
+
+.login_gnb a{
+    border: 2px solid rgb(23, 29, 25);
+    padding: 10px 30px;
+    border-radius: 2em;
+    color: rgb(23, 29, 25);
+}
+.login_gnb a:hover{color: #486bcd; border-color: #486bcd;}
+
+.join_gnb a{color: rgb(23, 29, 25);}
+.join_gnb a:hover{color: #486bcd;}
+/*-------------------------//gnb_wrapper 영역-------------------------*/
+
+/*------------------------promotion_banner 영역------------------------*/
+/* #promotion_banner{
+    height: 360px;
+    background-image: url("../images/banner_main.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#promotion_banner h2{display: none;} */
+/*-----------------------//promotion_banner 영역-----------------------*/
+
+#middle_wrapper{
+    width: 100%; height: 500px;
+    position: relative;
+}
+
+
+/*--------------------------game_wrapper 영역--------------------------*/
+#game_wrapper{
+    width: 70%; height: 100%;
+    background-color: #f8f9fa;
+    position: absolute;
+    top: 0; left: 0;
+}
+
+#game_wrapper h2{
+    margin-top: 20px;
+    margin-left: 50px;
+    padding-top: 20px;
+}
+
+.pc_game ul li{
+    width: 28%; height: 300px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 40px;
+    background-color: white;
+    padding: 5px;
+}
+
+.pc_game ul li:first-child{margin-left: 35px;}
+
+.pc_game ul li a strong{
+    display: block;
+    font-size: 20px;
+    color: black;
+}
+
+.pc_game ul li p{ color: gray; font-size: 13px;}
+.pc_game ul li p:last-child{
+   border-top: 1px solid gray;
+   margin-top: 10px;
+   padding-top: 10px;
+}
+
+.pc_game .img_wrap{
+    width: 100%;
+    overflow: hidden;
+}
+
+.pc_game img{width: 100%;}
+
+.pc_game li:hover img{
+    transform: scale(1.1);
+    transition: transform .35s;
+}
+
+#game_wrapper .mobile_game{visibility: hidden;}
+
+.mobile_game ul li{
+    width: 28%; height: 300px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+.mobile_game ul li:first-child{margin-left: 50px;}
+
+.mobile_game ul li a strong{
+    display: block;
+    font-size: 20px;
+}
+
+.mobile_game ul li p{ color: gray; font-size: 13px;}
+.mobile_game ul li p:last-child{
+   border-top: 1px solid gray;
+   margin-top: 10px;
+   padding-top: 10px;
+}
+
+.mobile_game img{width: 100%;}
+/*-------------------------//game_wrapper 영역-------------------------*/
+
+/*--------------------------info_wrapper 영역--------------------------*/
+#info_wrapper{
+    width: 30%; height: 100%;
+    background-color: #f8f9fa;
+    position: absolute;
+    top: 0; right: 0;
+}
+
+#info_wrapper .login_btn{
+    height: 40%;
+    margin-top: 120px;
+}
+
+.login_btn input{
+    display: block;
+    width: 85%;
+    height: 80px;
+    margin: 20px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.login_btn input:hover{
+    background-color: #486bcd;
+}
+
+.login_btn input:last-child{
+    height: 70px;
+    background-color: rgb(44, 51, 47);
+    transition: background-color 0.2s ease-in-out;
+}
+
+.login_btn input:last-child:hover{
+    background-color: #486bcd;
+}
+
+#info_wrapper .easy_login{
+    width: 85%;
+    height: 60px;
+    margin: 0 10px;
+    background-color: white;
+    font-size: 14px;
+}
+
+.easy_login p{
+    float: left;
+    margin: 20px 0px 20px 20px;
+}
+
+.easy_login ul li{
+    height: 20px;
+    float: left;
+    margin: 15px 0 0 5px;
+}
+
+.easy_login ul li a{color: #000; margin-right: 10px;}
+
+.easy_login ul li:nth-child(1){padding-left: 25px;}
+
+#info_wrapper .sub_menu{width: 85%; margin: 10px 0 0 10px;}
+
+.sub_menu ul li{
+    font-size: 14px;
+    display: inline;
+}
+
+.sub_menu ul li:nth-of-type(3){
+    float: right;
+    margin-top: 3px;
+}
+
+.sub_menu a:link{color: #222426;}
+.sub_menu a:visited{color: #222426;}
+.sub_menu a:active{color: #222426;}
+.sub_menu a:hover{color: #486bcd;}
+
+/*-------------------------//info_wrapper 영역-------------------------*/
+
+/*--------------------------main_footer 영역--------------------------*/
+#main_footer{
+    height: 300px;
+    background-color: #222426;
+    color: #fff;
+}
+
+#main_footer .left{
+    float: left;
+    margin-left: 50px;
+    padding-top: 80px;
+    font-size: 13px;
+}
+
+.left ul{margin-bottom: 40px;}
+
+.left ul li{
+    display: inline;
+    margin-right: 10px;
+}
+
+.left ul li a{color: #fff;}
+.left ul li a:hover {color: #486bcd;}
+
+#main_footer .right{
+    float: right;
+    margin-right: 50px;
+    padding-top: 100px;
+}
+
+.right .sns{margin-bottom: 50px; font-size: 13px; margin-left: 40px;}
+
+.sns ul li{
+    display: inline-block;
+    width: 20px; height: 20px;
+    margin-right: 10px;
+}
+
+.sns .sns_icon{
+    display: inline-block;
+    width: 20px; height: 20px;
+    background: url(https://rs.nxfs.nexon.com/home/images/main/set_footer.png) no-repeat 0 0;
+}
+
+.sns ul li .sns_icon:hover {background-color: #486bcd;}
+
+.sns li:nth-of-type(1) .sns_icon{
+    background-position: 0 -50px;
+    background-color: #fff;
+}
+
+.sns li:nth-of-type(2) .sns_icon{
+    background-position: 0 -100px;
+    background-color: #fff;
+}
+
+.sns li:nth-of-type(3) .sns_icon{
+    background-position: 0 -150px;
+    background-color: #fff;
+}
+
+.right img{float: right;}
+/*-------------------------//main_footer 영역-------------------------*/
+
+/*반응형 웹 영역*/
+@media ( max-width: 1300px ) {
+/*--------------------------gnb_wrapper 영역--------------------------*/
+.left_gnb{
+    height: 100%;
+    float: left;
+    line-height: 70px;
+    padding-left: 20px;
+}
+
+.logo_gnb img{
+    width: 170px;
+    padding-top: 10px;
+    margin-left: -100px;
+}
+
+.right_gnb .join_gnb{float: left; margin-right: 20px;}
+.right_gnb .login_gnb{float: left;margin-right: 20px;}
+/*-------------------------//gnb_wrapper 영역-------------------------*/
+
+/*------------------------promotion_banner 영역------------------------*/
+#promotion_banner{
+    width: auto;
+    background-position: center;
+}
+/*-----------------------//promotion_banner 영역-----------------------*/
+
+/*--------------------------game_wrapper 영역--------------------------*/
+.pc_game ul li a strong{
+    display: block;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.pc_game ul li p{ color: gray; font-size: 12px;}
+.pc_game ul li p:last-child{
+   border-top: 1px solid gray;
+   margin-top: 10px;
+   padding-top: 20px;
+}
+
+.pc_game img{width: 100%;}
+
+#game_wrapper .mobile_game{visibility: hidden;}
+/*-------------------------//game_wrapper 영역-------------------------*/
+
+
+/*--------------------------info_wrapper 영역--------------------------*/
+#info_wrapper .easy_login{font-size: 13px;}
+
+.easy_login ul li:nth-child(1){padding-left: 20px;}
+
+.easy_login img{width: 20px; height: 20px; margin-top: 5px;}
+
+#info_wrapper .sub_menu{margin: 10px 0 0 10px;}
+
+.sub_menu ul li{
+    font-size: 13px;
+    display: inline;
+}
+
+.sub_menu ul li:nth-of-type(3){
+    float: right;
+    margin-top: 3px;
+}
+}
+/*-------------------------//info_wrapper 영역-------------------------*/
+@media ( max-width: 1150px ) {  
+/*--------------------------game_wrapper 영역--------------------------*/
+.pc_game ul li{
+    width: 43%; height: 330px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 40px;
+    background-color: white;
+    padding: 5px;
+}
+
+.pc_game ul li:first-child{margin-left: 35px;}
+
+.pc_game ul li a strong{
+    display: block;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 20px;
+}
+    
+.pc_game ul li p{ color: gray; font-size: 12px;}
+.pc_game ul li p:last-child{
+    border-top: 1px solid gray;
+    margin-top: 10px;
+    padding-top: 20px;
+}
+    
+.pc_game ul li:nth-of-type(3){display: none;}
+/*-------------------------//game_wrapper 영역-------------------------*/
+    
+/*--------------------------info_wrapper 영역--------------------------*/
+
+
+#info_wrapper .easy_login{font-size: 13px;}
+    
+.easy_login ul li:nth-child(1){padding-left: 10px;}
+
+.easy_login ul li a{margin-right: 0;}
+    
+#info_wrapper .sub_menu{margin: 10px 0 0 10px;}
+ 
+.sub_menu ul{margin-top: 48px;}
+
+.sub_menu ul li{
+    font-size: 13px;
+    display: inline;
+}
+    
+.sub_menu ul li:nth-of-type(3){
+     float: right;
+    margin-top: 3px;
+}
+}
+/*-------------------------//info_wrapper 영역-------------------------*/
+
+@media ( max-width: 990px ) { 
+/*--------------------------game_wrapper 영역--------------------------*/
+.pc_game ul li{width: 38%; height: 280px;}
+    
+.pc_game ul li a strong{margin-bottom: 10px;}
+        
+/*-------------------------//game_wrapper 영역-------------------------*/
+        
+/*--------------------------info_wrapper 영역--------------------------*/
+#info_wrapper{
+    width: 35%; height: 100%;
+    background-color: #f8f9fa;
+    position: absolute;
+    top: 0; right: 0;
+}
+
+#info_wrapper .login_btn{
+    height: 38%;
+}
+
+#info_wrapper .easy_login{font-size: 13px;}
+        
+.easy_login ul li:nth-child(1){padding-left: 10px;}
+    
+.easy_login ul li a{margin-right: 0;}
+        
+#info_wrapper .sub_menu{margin: 10px 0 0 10px;}
+     
+.sub_menu ul{margin-top: 10px;}
+    
+.sub_menu ul li{
+    font-size: 13px;
+    display: inline;
+}
+        
+.sub_menu ul li:nth-of-type(3){
+    float: right;
+    margin-top: 3px;
+}
+/*-------------------------//info_wrapper 영역-------------------------*/
+
+/*--------------------------main_footer 영역--------------------------*/
+.left ul li a{color: #fff; font-size: 12px;}
+
+#main_footer .right{margin-right: 20px;}
+}
+/*-------------------------//main_footer 영역-------------------------*/
+

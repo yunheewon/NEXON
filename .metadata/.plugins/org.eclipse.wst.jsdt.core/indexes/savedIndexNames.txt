@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+D:\Heewon\NEXON\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+90226265.index
+3411755499.index
+2449313608.index
+859343593.index
+3100285042.index
+1500266971.index

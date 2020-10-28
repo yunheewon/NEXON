@@ -1,0 +1,147 @@
+* {margin: 0; padding: 0;}
+ol,ul {list-style: none;}
+a {text-decoration: none; outline: 0;}
+img {border: 0;}
+
+/*--------------------------gnb_wrapper 영역--------------------------*/
+#gnb_wrapper{
+    width: 100%; height: 70px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#gnb_wrapper .logo{
+    float: left;
+    margin-left: 20%;
+}
+
+#gnb_wrapper .side_menu{
+    float: right;
+    overflow: hidden;
+    margin-top: 25px;
+    margin-right: 20%;
+}
+
+.side_menu li{
+    float: left;
+    margin-left: -1px;
+    padding: 0 8px 0 7px;
+}
+
+.side_menu li a{color: #000;}
+.side_menu li a:hover{color: #486bcd;}
+/*-------------------------//gnb_wrapper 영역-------------------------*/
+
+/*---------------------------join_way 영역---------------------------*/
+#join_way{
+    width: 520px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+#join_way h2{
+    text-align: center;
+    margin: 30px 0;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/*------------------------way_btn_wrapper 영역------------------------*/
+#join_way .way_btn_wrapper{
+    height: 417px;
+    margin-bottom: 70px;
+    text-align: left;
+}
+
+.way_btn_wrapper li{
+    width: 100%; height: 70px;
+    margin-bottom: 15px;
+}
+
+.way_btn_wrapper li a{
+    display: block;
+    width: 480px; height: 50px;
+    border: 1px solid #c8c8c8;
+    padding: 20px 0 0 36px;
+    background-color: #fff;
+}
+
+.way_btn_wrapper li a:hover{border-color: #486bcd;}
+
+.way_btn_wrapper img{
+    vertical-align: top;
+}
+/*---------------------------//join_way 영역---------------------------*/
+
+/*--------------------------footer 영역--------------------------*/
+footer{
+    width: 100%; height: 120px;
+}
+
+footer p {
+    text-align: center;
+    margin: 50px 0;
+}
+/*-------------------------//footer 영역-------------------------*/
+
+@media (max-width:375px){
+/*--------------------------gnb_wrapper 영역--------------------------*/
+#gnb_wrapper{width: 375px;}
+
+hr{width: 375px;}
+
+#gnb_wrapper .logo{
+    margin: 0%;
+    margin-top: 10px;
+}
+
+.logo img{width: 150px;}
+
+#gnb_wrapper .side_menu{
+    margin-right: 2%;
+    font-size: 12px;
+    margin-top: 27px;
+}
+/*-------------------------//gnb_wrapper 영역-------------------------*/
+
+/*---------------------------join_way 영역---------------------------*/
+#join_way{
+    width: 375px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+#join_way h2{font-size: 15px;}
+
+#join_way img{width: 375px;}
+
+/*------------------------way_btn_wrapper 영역------------------------*/
+#join_way .way_btn_wrapper{
+    width: 375px; height: 407px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.way_btn_wrapper li{
+    width: 375px; height: 55px;
+    margin-bottom: 15px;
+    margin-left: 12px;
+}
+
+.way_btn_wrapper li a{
+    width: 330px; height: 40px;
+    padding: 13px 0 0 18px;
+}
+
+#join_way .way_btn_wrapper li a img{
+    width: 320px;
+    vertical-align: top;
+}
+/*---------------------------//join_way 영역---------------------------*/
+
+/*--------------------------footer 영역--------------------------*/
+footer{width: 375px;}
+
+footer p{font-size: 12px;}
+/*-------------------------//footer 영역-------------------------*/
+}

@@ -1,0 +1,397 @@
+* {margin: 0; padding: 0;}
+ol,ul {list-style: none;}
+a {text-decoration: none; outline: 0;}
+img {border: 0;}
+button{outline: none;}
+/*-------------------------sidebar_menu 영역-------------------------*/
+#sidebar_menu {
+    width: 650px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -650px;
+    z-index: 9999;
+    background-color: white;
+}
+/*------------------------//sidebar_menu 영역------------------------*/
+
+/*-------------------------menu_content 영역-------------------------*/
+#sidebar_menu .menu_content {
+    position: absolute;
+    top: 20px;
+    left: 90px;
+    color: #fff;
+}
+/*------------------------//menu_content 영역------------------------*/
+
+/*---------------------------control 영역---------------------------*/
+.menu_content .control{
+    width: 550px; height: 40px;
+    margin-bottom: 10px;
+}
+
+.control .close{
+    margin-top: 5px;
+    margin-left: 20px;
+    border: none;
+    background-color: white;
+}
+
+.close img{
+    width: 25px; height: 25px;
+}
+/*--------------------------//control 영역--------------------------*/
+
+/*--------------------------game_list 영역--------------------------*/
+.menu_content .game_list{
+    width: 550px; height: 540px;
+    margin-top: 10px;
+}
+/*-------------------------//game_list 영역-------------------------*/
+
+/*--------------------------game_tab 영역--------------------------*/
+.game_list .game_tab{
+    height: 70px;
+    padding-left: 50px;
+    position: relative;
+    background-color: white;
+}
+
+.game_tab ul li input{
+    float: left;
+    margin-top: 25px;
+    margin-right: 20px;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    border: none;
+    background-color: white;
+}
+
+.game_tab a{
+    position: absolute;
+    top: 20px; right: 30px;
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 5px 10px;
+    color: #000;
+}
+
+.pc_btn:hover{color: #486bcd;}
+.mobile_btn:hover{color: #486bcd;}
+.game_tab a:hover{color: #486bcd; border-color: #486bcd;}
+/*-------------------------//game_tab 영역-------------------------*/
+
+/*---------------------------pc_game 영역---------------------------*/
+.game_list .pc_list{
+    width: 550px; height: 70%;
+    background-color: #fff;
+    padding-top: 30px;
+    overflow: auto;
+}
+/*--------------------------//pc_game 영역--------------------------*/
+
+/*---------------------------pc_cell 영역---------------------------*/
+.pc_list .pc_cell{
+    float: left;
+    margin-left: 50px;
+}
+
+.pc_cell h3{
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.pc_cell ul{
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.pc_cell ul li{margin-bottom: 10px; font-size: 13px;}
+.pc_cell ul li:hover{color: #486bcd;}
+/*--------------------------//pc_cell 영역--------------------------*/
+
+/*-------------------------mobile_game 영역-------------------------*/
+.game_list .mobile_list{
+    width: 550px; height: 70%;
+    background-color: #fff;
+    padding-top: 30px;
+    overflow: auto;
+    display: none;
+}
+/*------------------------//mobile_game 영역------------------------*/
+
+/*-------------------------mobile_cell 영역-------------------------*/
+.mobile_list .mobile_cell{
+    float: left;
+    margin-left: 50px;
+}
+
+.mobile_cell h3{
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.mobile_cell ul{
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.mobile_cell ul li{margin-bottom: 10px; font-size: 13px;}
+.mobile_cell ul li:hover{color: #486bcd;}
+/*------------------------//mobile_cell 영역------------------------*/
+
+/*--------------------------more_menu 영역--------------------------*/
+.menu_content .more_menu{
+    width: 100%; height: 145px;
+    background-color: #222;
+    font-size: 17px;
+}
+/*-------------------------//more_menu 영역-------------------------*/
+
+/*--------------------------left_menu 영역--------------------------*/
+.more_menu .left_menu{
+    float: left;
+    margin-left: 20%;
+    padding-top: 30px;
+}
+
+.left_menu ul li{
+    margin-bottom: 30px;
+}
+
+.left_menu ul li img{
+    width: 20px; height: 20px;
+}
+
+.left_menu a:active{color: #fff}
+.left_menu a:link{color: #fff}
+.left_menu a:visited{color: #fff}
+.left_menu a:hover{color: #486bcd;}
+/*-------------------------//left_menu 영역-------------------------*/
+
+/*--------------------------right_menu 영역--------------------------*/
+.more_menu .right_menu{
+    float: right;
+    margin-right: 25%;
+    padding-top: 30px;
+}
+
+.right_menu ul li{
+    margin-bottom: 30px;
+}
+
+.right_menu ul li img{
+    width: 20px; height: 20px;
+}
+
+.right_menu a:active{color: #fff}
+.right_menu a:link{color: #fff}
+.right_menu a:visited{color: #fff}
+.right_menu a:hover{color: #486bcd;}
+/*-------------------------//right_menu 영역-------------------------*/
+
+/*sidebar_menu 이외 배경 조작*/
+.emphasized {
+    position:fixed;
+    box-shadow : rgba(0,0,0,0.5) 0 0 0 9999px, rgba(0,0,0,0.5) 2px 2px 3px 3px;
+    z-index : 100;
+}
+
+.release{
+    position: fixed;
+    box-shadow: none;
+}
+
+/**/
+@media (max-width:375px){
+/*-------------------------sidebar_menu 영역-------------------------*/
+#sidebar_menu {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -675px;
+    z-index: 9999;
+    background-color: white;
+}
+/*------------------------//sidebar_menu 영역------------------------*/
+
+/*-------------------------menu_content 영역-------------------------*/
+#sidebar_menu .menu_content {
+    position: absolute;
+    top: 20px;
+    left: 90px;
+    color: #fff;
+}
+/*------------------------//menu_content 영역------------------------*/
+
+/*---------------------------control 영역---------------------------*/
+.menu_content .control{
+    width: 100%; height: 40px;
+    margin-bottom: 10px;
+}
+
+.control .close{
+    margin-top: 5px;
+    margin-left: 20px;
+    border: none;
+    background-color: white;
+}
+
+.close img{
+    width: 25px; height: 25px;
+}
+/*--------------------------//control 영역--------------------------*/
+
+/*--------------------------game_list 영역--------------------------*/
+.menu_content .game_list{
+    width: 100%; height: 500px;
+}
+/*-------------------------//game_list 영역-------------------------*/
+
+/*--------------------------game_tab 영역--------------------------*/
+.game_list .game_tab{
+    height: 40px;
+    padding-left: 20px;
+    position: relative;
+    background-color: white;
+}
+
+.game_tab ul li input{
+    float: left;
+    margin-top: 15px;
+    margin-right: 20px;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    border: none;
+    background-color: white;
+}
+
+.game_tab a{display: none;}
+/*-------------------------//game_tab 영역-------------------------*/
+
+/*---------------------------pc_game 영역---------------------------*/
+.game_list .pc_list{
+    height: 85%;
+    background-color: #fff;
+    padding-top: 10px;
+    overflow: auto;
+}
+/*--------------------------//pc_game 영역--------------------------*/
+
+/*---------------------------pc_cell 영역---------------------------*/
+.pc_list .pc_cell{
+    float: left;
+    margin-left: 40px;
+}
+
+.pc_cell h3{
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.pc_cell ul{
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.pc_cell ul li{margin-bottom: 10px; font-size: 10px;}
+/*--------------------------//pc_cell 영역--------------------------*/
+
+/*-------------------------mobile_game 영역-------------------------*/
+.game_list .mobile_list{
+    height: 85%;
+    background-color: #fff;
+    padding-top: 10px;
+    overflow: auto;
+    display: none;
+}
+/*------------------------//mobile_game 영역------------------------*/
+
+/*-------------------------mobile_cell 영역-------------------------*/
+.mobile_list .mobile_cell{
+    float: left;
+    margin-left: 40px;
+}
+
+.mobile_cell h3{
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.mobile_cell ul{
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.mobile_cell ul li{margin-bottom: 10px; font-size: 10px;}
+/*------------------------//mobile_cell 영역------------------------*/
+
+/*--------------------------more_menu 영역--------------------------*/
+.menu_content .more_menu{
+    width: 100%; height: 85px;
+    background-color: #222;
+    font-size: 17px;
+}
+/*-------------------------//more_menu 영역-------------------------*/
+
+/*--------------------------left_menu 영역--------------------------*/
+.more_menu .left_menu{
+    float: left;
+    margin-left: 10%;
+    padding-top: 20px;
+    font-size: 13px;
+}
+
+.left_menu ul li{
+    margin-bottom: 10px;
+}
+
+.left_menu ul li img{
+    width: 15px; height: 15px;
+}
+
+.left_menu a:active{color: #fff}
+.left_menu a:link{color: #fff}
+.left_menu a:visited{color: #fff}
+.left_menu a:hover{color: #486bcd;}
+/*-------------------------//left_menu 영역-------------------------*/
+
+/*--------------------------right_menu 영역--------------------------*/
+.more_menu .right_menu{
+    float: left;
+    margin-left: 100px;
+    padding-top: 20px;
+    font-size: 13px;
+}
+
+.right_menu ul li{
+    margin-bottom: 10px;
+}
+
+.right_menu ul li img{
+    width: 15px; height: 15px;
+}
+
+.right_menu a:active{color: #fff}
+.right_menu a:link{color: #fff}
+.right_menu a:visited{color: #fff}
+.right_menu a:hover{color: #486bcd;}
+/*-------------------------//right_menu 영역-------------------------*/
+/*sidebar_menu 이외 배경 조작*/
+.emphasized {
+    position:fixed;
+    box-shadow : rgba(0,0,0,0.5) 0 0 0 9999px, rgba(0,0,0,0.5) 2px 2px 3px 3px;
+    z-index : 100;
+}
+
+.release{
+    position: fixed;
+    box-shadow: none;
+}
+}

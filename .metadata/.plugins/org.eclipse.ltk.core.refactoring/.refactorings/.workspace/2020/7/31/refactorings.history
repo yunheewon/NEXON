@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Nexon&apos; to &apos;NexonProject&apos;" description="Rename resource &apos;Nexon&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Nexon" name="NexonProject" stamp="1595861349555" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;NexonProject&apos; to &apos;Nexon&apos;" description="Rename resource &apos;NexonProject&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/NexonProject" name="Nexon" stamp="1595861481759" updateReferences="true"/>
+</session>

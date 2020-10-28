@@ -1,0 +1,403 @@
+* {
+    margin: 0; padding: 0; 
+    border-radius: 0;
+    box-sizing: border-box; 
+}
+ol,ul {list-style: none;}
+a {text-decoration: none; outline: 0;}
+img {border: 0;}
+
+a:active{color: rgb(23, 29, 25);}
+a:link{color: rgb(23, 29, 25);}
+a:visited{color: rgb(23, 29, 25);}
+a:hover{color: rgb(23, 29, 25);}
+
+/*--------------------------gnb_wrapper 영역--------------------------*/
+#gnb_wrapper{
+    height: 70px;
+    background-color: #fff;
+    position: relative;
+}
+
+.left_gnb{
+    height: 100%;
+    float: left;
+    line-height: 70px;
+    padding-left: 50px;
+}
+
+.left_gnb .menu_icon{
+    position: relative;
+    display: inline-block;
+    width: 1.25em;
+    height: 0.8em;
+    margin-right: 0.3em;
+    border-top: 0.2em solid rgb(23, 29, 25);
+    border-bottom: 0.2em solid rgb(23, 29, 25);
+    box-sizing: unset;
+}
+
+.left_gnb .menu_icon:before{
+    content: "";
+    position: absolute;
+    top: 0.3em;
+    left: 0px;
+    width: 100%;
+    border-top: 0.2em solid rgb(23, 29, 25);
+}
+
+.left_gnb .menu_font{
+    font-size: 20px;
+    color: rgb(23, 29, 25);
+    font-weight: bold;
+}
+
+.logo_gnb{
+    height: 100%;
+    text-align: center;
+}
+
+.logo_gnb img{
+    width: 170px;
+    padding-top: 10px;
+    margin-left: -150px;
+}
+
+.right_gnb{
+    height: 100%;
+    position: absolute;
+    top: 0; right: 0;
+    line-height: 70px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.right_gnb .join_gnb{float: left; margin-right: 50px;}
+.right_gnb .login_gnb{float: left;margin-right: 50px;}
+
+.login_gnb a{
+    border: 2px solid rgb(23, 29, 25);
+    padding: 10px 30px;
+    border-radius: 2em;
+    color: rgb(23, 29, 25);
+}
+.login_gnb a:hover{color: #486bcd; border-color: #486bcd;}
+
+.join_gnb a{color: rgb(23, 29, 25);}
+.join_gnb a:hover{color: #486bcd;}
+/*-------------------------//gnb_wrapper 영역-------------------------*/
+
+/*--------------------------a 태그 영역--------------------------*/
+#nav_wrapper a:active{color: rgb(23, 29, 25);}
+#nav_wrapper a:link{color: gray;}
+#nav_wrapper a:visited{color: gray;}
+#nav_wrapper a:hover{color: #486bcd;}
+/*-------------------------//a 태그 영역-------------------------*/
+
+/*--------------------------nav_wrapper 영역--------------------------*/
+#nav_wrapper{
+    width: 100%; height: 100px;
+    background-color: #fff;
+    border-bottom: 1px solid lightgray;
+}
+
+#nav_wrapper ul{
+    text-align: center;
+    line-height: 100px;
+}
+
+#nav_wrapper ul li{
+    display: inline;
+    font-size: 22px;
+    margin: 0 30px;
+}
+
+#nav_wrapper ul li a{font-weight: bold;}
+
+#nav_wrapper ul li:nth-last-of-type(1){border-bottom: 2px solid rgb(23, 29, 25);}
+#nav_wrapper ul li:nth-last-of-type(1) a{color: rgb(23, 29, 25);}
+/*-------------------------//nav_wrapper 영역-------------------------*/
+
+/*------------------------content_wrapper 영역------------------------*/
+/*#content_wrapper{}*/
+
+
+/*--------------------------side_menu 영역--------------------------*/
+#content_wrapper .side_menu{
+    width: 110px; height: 600px;
+    position: absolute;
+    left: 0;
+    background-color: #777;
+    position: fixed;
+}
+
+/*.side_menu ul{}*/
+
+.side_menu ul li{
+    border-bottom: 1px solid lightgray;
+}
+
+.side_menu ul li a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    height: 65px;
+    padding-top: 10px;
+    line-height: 1.4;
+}
+
+.side_menu ul li:nth-of-type(3) a{height: 100px;}
+.side_menu ul li:nth-of-type(4) a{height: 100px;}
+
+.side_menu ul li:nth-of-type(5) a{
+    border-bottom: none;
+    height: 40px;
+}
+
+.side_menu ul li:nth-of-type(6) a{
+    border-bottom: none;
+    height: 40px;
+}
+
+.side_menu ul li a:hover{background-color: #4e545d;}
+
+.side_menu ul li:nth-of-type(1) a{background-color: #28313d;}
+/*-------------------------//side_menu 영역-------------------------*/
+
+/*--------------------------choice_game 영역--------------------------*/
+#content_wrapper .choice_game{
+    width: 1090px; height: 600px;
+    margin: 0 auto;
+    padding: 60px 100px 30px 100px;
+}
+
+.choice_game .tit{
+    text-align: center;
+    font-size: 23px;
+    color: #4e545d;
+    margin-bottom: 50px;
+}
+
+/*--------------------------game_list 영역--------------------------*/
+.choice_game .game_list{
+    display: block;
+    margin-left: 12px;
+}
+
+/*--------------------------list_item 영역--------------------------*/
+.game_list .list_item{
+    display: list-item;
+    float: left;
+    margin: 0 0 30px 30px;
+    background: #fff;
+}
+
+.list_item a{
+    display: block;
+    width: 138px;
+    border: 1px solid #e7e7e7;
+    font-size: 0;
+}
+
+.list_item img{width: 100%; vertical-align: middle;}
+
+.list_item span{
+    display: table-cell;
+    width: 138px; height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 17px;
+    font-size: 14px;
+}
+
+.list_item a:hover{
+    border-color: #486bcd;
+    background-color: #486bcd;
+    color: #fff;
+}
+/*-------------------------//choice_game 영역-------------------------*/
+/*-----------------------//content_wrapper 영역-----------------------*/
+
+/*--------------------------footer 영역--------------------------*/
+footer{
+    width: 100%; height: 120px;
+}
+
+footer p {
+    text-align: center;
+    margin: 50px 0;
+}
+/*-------------------------//footer 영역-------------------------*/
+
+
+@media (max-width:375px){
+/*--------------------------gnb_wrapper 영역--------------------------*/
+#gnb_wrapper{
+    width: 375px; height: 70px;
+    background-color: #fff;
+    position: relative;
+}
+
+.left_gnb{
+    height: 100%;
+    float: left;
+    line-height: 70px;
+    padding-left: 10px;
+}
+
+.left_gnb .menu_icon{
+    position: relative;
+    display: inline-block;
+    width: 1.0em;
+    height: 0.6em;
+    margin-right: 0.1em;
+    border-top: 0.2em solid rgb(23, 29, 25);
+    border-bottom: 0.2em solid rgb(23, 29, 25);
+}
+
+.left_gnb .menu_icon:before{
+    content: "";
+    position: absolute;
+    top: 0.2em;
+    left: 0px;
+    width: 100%;
+    border-top: 0.2em solid rgb(23, 29, 25);
+}
+
+.left_gnb .menu_font{
+    font-size: 14px;
+    color: rgb(23, 29, 25);
+    font-weight: bold;
+}
+
+.logo_gnb{
+    height: 100%;
+    text-align: center;
+}
+
+.logo_gnb img{
+    width: 90px;
+    padding-top: 23px;
+    margin-left: -75px;
+}
+
+.right_gnb{
+    height: 100%;
+    position: absolute;
+    top: 0; right: 0;
+    line-height: 70px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.right_gnb .join_gnb{float: left; margin-right: 5px;}
+.right_gnb .login_gnb{float: left;margin-right: 5px;}
+
+.login_gnb a{
+    border: 2px solid rgb(23, 29, 25);
+    padding: 5px 10px;
+    border-radius: 2em;
+    color: rgb(23, 29, 25);
+}
+.login_gnb a:hover{color: #486bcd; border-color: #486bcd;}
+
+.join_gnb a{color: rgb(23, 29, 25);}
+.join_gnb a:hover{color: #486bcd;}
+/*-------------------------//gnb_wrapper 영역-------------------------*/
+
+/*--------------------------a 태그 영역--------------------------*/
+#nav_wrapper a:active{color: rgb(23, 29, 25);}
+#nav_wrapper a:link{color: gray;}
+#nav_wrapper a:visited{color: gray;}
+#nav_wrapper a:hover{color: #486bcd;}
+/*-------------------------//a 태그 영역-------------------------*/
+
+/*--------------------------nav_wrapper 영역--------------------------*/
+#nav_wrapper{
+    width: 375px; height: 100px;
+    background-color: #fff;
+}
+
+#nav_wrapper ul li{
+    display: inline;
+    margin: 0 15px;
+    font-size: 18px;
+}
+/*-------------------------//nav_wrapper 영역-------------------------*/
+/*------------------------content_wrapper 영역------------------------*/
+/*#content_wrapper{}*/
+
+/*--------------------------side_menu 영역--------------------------*/
+#content_wrapper .side_menu{
+    width: 33px; height: 100px;
+    position: absolute;
+    left: 0; top: 280px;
+    background-color: #777;
+    position: fixed;
+}
+
+/*.side_menu ul{}*/
+
+.side_menu ul li{
+    border-bottom: none;
+}
+
+.side_menu ul li a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    height: 50px;
+    padding-top: 10px;
+    line-height: 1.4;
+    font-size: 11px;
+}
+
+.side_menu ul li:nth-of-type(3) a{display: none;}
+.side_menu ul li:nth-of-type(4) a{display: none;}
+.side_menu ul li:nth-of-type(5) a{display: none;}
+.side_menu ul li:nth-of-type(6) a{display: none;}
+/*-------------------------//side_menu 영역-------------------------*/
+
+/*--------------------------choice_game 영역--------------------------*/
+#content_wrapper .choice_game{
+    width: 375px; height: 1400px;
+    margin: 0 auto;
+    padding: 60px 10px 30px 10px;
+}
+
+.choice_game .tit{
+    text-align: center;
+    font-size: 20px;
+    color: #4e545d;
+    margin-bottom: 50px;
+}
+
+/*--------------------------game_list 영역--------------------------*/
+.choice_game .game_list{
+    display: block;
+    margin-left: 0px;
+}
+
+/*--------------------------list_item 영역--------------------------*/
+.game_list .list_item{
+    display: list-item;
+    float: left;
+    margin: 0 0 30px 26px;
+    background: #fff;
+}
+/*-------------------------//choice_game 영역-------------------------*/
+/*-----------------------//content_wrapper 영역-----------------------*/
+
+/*--------------------------footer 영역--------------------------*/
+footer{
+    width: 100%; height: 120px;
+    font-size: 12px;
+}
+
+footer p {
+    text-align: center;
+    margin: 50px 0;
+}
+/*-------------------------//footer 영역-------------------------*/
+
+}

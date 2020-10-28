@@ -1,0 +1,196 @@
+* {margin: 0; padding: 0;}
+ol,ul {list-style: none;}
+a {text-decoration: none; outline: 0;}
+img {border: 0;}
+
+/*----------------------nav_wrapper 영역-----------------------*/
+#header_wrapper{
+    overflow: hidden;
+    width: 100%; height: 142px;
+    background: url(https://ssl.nx.com/S2/membership/2011/global/bg_header.gif) repeat-x left top;
+}
+
+#header_wrapper .header_deco{
+    width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#header_wrapper h1{
+    position: absolute;
+    top: 32px; left: 0;
+    width: 171px; height: 57px;
+    padding: 40px 0 0 18px;
+}
+
+#header_wrapper img{
+    width: 157px; height: 19px;
+}
+
+#header_wrapper ul{
+    position: absolute;
+    top: 32px; left: 190px;
+    overflow: hidden;
+    width: 709px; height: 107px;
+    border-right: 1px solid #ccc;
+    background: url(https://ssl.nx.com/S2/membership/2011/global/nav_membership.gif) no-repeat left top;
+    border-left: 1px solid #ccc;;
+}
+
+#header_wrapper ul li{float: left;}
+
+#header_wrapper ul li a{
+    display: block;
+    width: 180px;
+    height: 107px;
+}
+
+#header_wrapper ul li a span{display: none;}
+
+#header_wrapper ul li .on{background: url(https://ssl.nx.com/S2/membership/2011/global/nav_membership.gif) no-repeat left top;}
+
+#header_wrapper ul .info .on{background-position: left -107px;}
+
+#header_wrapper ul .qna a{width: 169px;}
+/*-----------------------//nav_wrapper 영역-----------------------*/
+
+/*----------------------content_wrapper 영역----------------------*/
+#content_wrapper{
+    width: 1225px;
+    margin: 0 auto;
+}
+
+/*-----------------------side_section 영역------------------------*/
+#content_wrapper .side_section{
+    float: left;
+    border-right: 1px solid black;
+}
+
+.side_section h3{
+    font-size: 22px;
+    padding: 30px 0;
+    margin-left: 100px;
+}
+
+/*------------------------top_section 영역-----------------------*/
+.side_section .top_section{
+    font-size: 17px;
+    padding: 30px 50px 60px 50px;
+    margin-left: 50px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.top_section li{margin-bottom: 20px;}
+
+.top_section a:active{color: rgb(23, 29, 25);}
+.top_section a:link{color: rgb(23, 29, 25);}
+.top_section a:visited{color: rgb(23, 29, 25);}
+.top_section a:hover{color: #486bcd;}
+.top_section li:nth-of-type(2) a{color: #486bcd; font-weight: bold;}
+
+/*----------------------bottom_section 영역----------------------*/
+.side_section .bottom_section{
+    height: 100px;
+    font-size: 17px;
+    padding: 20px 0 80px 50px;
+    margin-left: 50px;
+}
+
+.bottom_section li{
+    height: 30px;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+
+.bottom_section li img{
+    float: left;
+    margin-right: 5px;
+}
+
+.bottom_section a:active{color: rgb(23, 29, 25);}
+.bottom_section a:link{color: rgb(23, 29, 25);}
+.bottom_section a:visited{color: rgb(23, 29, 25);}
+.bottom_section a:hover{color: #486bcd;}
+/*----------------------//side_section 영역----------------------*/
+
+/*-------------------------id_info 영역-------------------------*/
+#content_wrapper .id_info{
+    float: left;
+    width: 820px; height: 509px;
+}
+
+/*-----------------------id_info_tit 영역-----------------------*/
+.id_info .id_info_tit{
+    margin: 40px 50px;
+}
+
+.id_info_tit h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.id_info_tit p{color: gray; font-size: 13px;}
+
+/*-----------------------input_wrapper 영역-----------------------*/
+#content_wrapper .input_wrapper{
+    margin: 40px 50px;
+    border-top: 2px solid black;
+}
+
+.input_wrapper p{
+    text-align: center; 
+    font-size: 14px; 
+    margin-bottom: 10px;
+}
+.input_wrapper p:first-child{padding-top: 30px;}
+.input_wrapper p:nth-of-type(2){padding-bottom: 30px;}
+
+.input_wrapper .pwd_conf{
+    height: 100px;
+    border: 1px solid lightgray;
+    position: relative;
+}
+
+.pwd_conf span{
+    line-height: 100px;
+    margin-left: 110px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.pwd_conf input[type="password"]{
+    width: 250px; height: 30px;
+    position: absolute;
+    top: 34px; left: 250px;
+    background-color: #eaf0fe;
+    border: 1px solid #c0cbeb;
+}
+
+.pwd_conf input[type="button"]{
+    width: 80px; height: 33px;
+    position: absolute;
+    top: 34px; left: 520px;
+    background-color: #486bcd;
+    border: 1px solid #486bcd;
+    color: #fff;
+    border-radius: 0.2em;
+}
+/*------------------------//id_info 영역------------------------*/
+
+/*--------------------//content_wrapper 영역---------------------*/
+
+/*--------------------------footer 영역--------------------------*/
+footer{
+    width: 100%; height: 120px;
+    border-top: 1px solid black;
+    float: left;
+}
+
+footer p {
+    text-align: center;
+    margin: 55px 0;
+}
+/*-------------------------//footer 영역-------------------------*/
+
+

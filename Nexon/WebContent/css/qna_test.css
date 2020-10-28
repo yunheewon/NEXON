@@ -1,0 +1,495 @@
+* {margin: 0; padding: 0;}
+ol,ul {list-style: none;}
+a {text-decoration: none; outline: 0;}
+img {border: 0;}
+
+
+/*--------------------------gnb_wrapper 영역--------------------------*/
+#gnb_wrapper{
+    height: 70px;
+    background-color: #fff;
+    position: relative;
+}
+
+.left_gnb{
+    height: 100%;
+    float: left;
+    line-height: 70px;
+    padding-left: 50px;
+}
+
+.left_gnb .menu_icon{
+    position: relative;
+    display: inline-block;
+    width: 1.25em;
+    height: 0.8em;
+    margin-right: 0.3em;
+    border-top: 0.2em solid rgb(23, 29, 25);
+    border-bottom: 0.2em solid rgb(23, 29, 25);
+}
+
+.left_gnb .menu_icon:before{
+    content: "";
+    position: absolute;
+    top: 0.3em;
+    left: 0px;
+    width: 100%;
+    border-top: 0.2em solid rgb(23, 29, 25);
+}
+
+.left_gnb .menu_font{
+    font-size: 20px;
+    color: rgb(23, 29, 25);
+    font-weight: bold;
+}
+
+.logo_gnb{
+    height: 100%;
+    text-align: center;
+}
+
+.logo_gnb img{
+    width: 170px;
+    padding-top: 10px;
+    margin-left: -150px;
+}
+
+.right_gnb{
+    height: 100%;
+    position: absolute;
+    top: 0; right: 0;
+    line-height: 70px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.right_gnb .join_gnb{float: left; margin-right: 50px;}
+.right_gnb .login_gnb{float: left;margin-right: 50px;}
+
+.login_gnb a{
+    border: 2px solid rgb(23, 29, 25);
+    padding: 10px 30px;
+    border-radius: 2em;
+    color: rgb(23, 29, 25);
+}
+.login_gnb a:hover{color: #486bcd; border-color: #486bcd;}
+
+.join_gnb a{color: rgb(23, 29, 25);}
+.join_gnb a:hover{color: #486bcd;}
+/*-------------------------//gnb_wrapper 영역-------------------------*/
+
+#write_wrapper{
+    width: 100%;
+}
+
+#write_wrapper h1{
+    height: 65px;
+    text-align: center;
+    background-color: rgb(200, 0, 0);
+    line-height: 65px;
+    color: #fff;
+}
+
+#write_wrapper .write_form{
+    width: 700px;
+    margin: 20px auto;
+    border: 1px solid gray;
+}
+
+.write_form h3{
+    text-align: center;
+    margin: 20px 0;
+    color: rgb(23, 29, 25);
+}
+
+.write_form .return_email{
+    height: 42px;
+    padding: 10px 0 10px 90px;
+}
+
+.return_email label{
+    text-align: center;
+    float: left;
+    margin-right: 20px;
+}
+
+.return_email input{
+    width: 417px; height: 30px;
+    margin-top: 5px;
+    border-radius: 0.3em;
+    border: 1px solid lightgray;
+}
+
+.write_form .game_sele{
+    width: 270px; height: 42px;
+    padding: 10px 0 10px 90px;
+    float: left;
+}
+
+.game_sele label{
+    text-align: center;
+    float: left;
+    margin-right: 25px;
+    line-height: 40px;
+}
+
+.game_sele select{
+    width: 150px; height: 30px;
+    margin-top: 5px;
+    border-radius: 0.3em;
+    border: 1px solid lightgray;
+}
+
+.write_form .qna_kind{
+    width: 340px; height: 42px;
+    padding: 10px 0;
+    float: right;
+}
+
+.qna_kind label{
+    text-align: center;
+    float: left;
+    margin-right: 25px;
+    line-height: 40px;
+}
+
+.qna_kind select{
+    width: 150px; height: 30px;
+    margin-top: 5px;
+    border-radius: 0.3em;
+    border: 1px solid lightgray;
+}
+
+
+.write_form .qna_content{
+    width: 100%;
+    float: left;
+}
+
+.qna_content .tit_wrap{
+    height: 42px;
+    padding: 10px 0 10px 105px;
+}
+
+.tit_wrap label{
+    text-align: center;
+    float: left;
+    margin-right: 42px;
+    line-height: 40px;
+}
+
+.tit_wrap input{
+    width: 417px; height: 30px;
+    margin-top: 5px;
+    border-radius: 0.3em;
+    border: 1px solid lightgray;
+}
+
+.qna_content #content{
+    width: 466px; height: 250px;
+    margin: 0 90px;
+    overflow: auto;
+    font-size: 17px;
+    padding: 20px 20px 0 20px;
+}
+
+.write_form .add_file{
+    width: 610px;
+    float: left;
+    padding: 10px 0px 10px 90px;
+}
+
+.add_file .file_tit{
+    float: left;
+    height: 100%;
+    line-height: 23px;
+    margin-right: 10px;
+    background-color: #fff;
+    color: black;
+    border: none;
+    padding: .5em 0;
+}
+
+/*테스트 구간*/
+.add_file input[type="file"]{
+    position: absolute;
+    width: 1px; height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0; 
+}
+
+.add_file label{
+    display: inline-block;
+    width: 60px;
+    padding: .5em .75em;
+    color: #fff;
+    font-size: 15px;
+    line-height: normal;
+    vertical-align: middle;
+    background-color: crimson;
+    cursor: pointer;
+    border: 1px solid crimson;
+    border-radius: .25em;
+}
+
+.add_file .upload-name{
+    display: inline-block;
+    width: 232px;
+    padding: .5em .75em;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: normal;
+    vertical-align: middle;
+    background-color: #f5f5f5;
+    border: 1px solid #e2e2e2;
+    border-radius: .25em;
+    appearance: none;
+}
+/*----------*/
+
+.write_form .warning_msg{
+    float: left;
+    width: 610px; height: 100px;
+    padding: 40px 0 0 55px;
+    font-size: 14px;
+}
+
+.warning_msg li{
+    margin-bottom: 10px;
+    color: gray;
+    list-style: square;
+}
+
+.write_form .btn_wrap{
+    text-align: center;
+}
+
+.btn_wrap input{
+    width: 180px; height: 50px;
+    margin: 30px 0;
+    border: 1px solid rgb(200, 0, 0);
+    border-radius: 0.3em;
+    background-color: rgb(200, 0, 0);
+    color: #fff;
+    font-size: 18px;
+}
+
+/*--------------------------footer 영역--------------------------*/
+footer{
+    width: 100%; height: 120px;
+}
+
+footer p {
+    text-align: center;
+    margin: 50px 0;
+}
+/*-------------------------//footer 영역-------------------------*/
+
+@media (max-width:375px){
+/*--------------------------gnb_wrapper 영역--------------------------*/
+#gnb_wrapper{
+    width: 375px; height: 70px;
+    background-color: #fff;
+    position: relative;
+}
+
+.left_gnb{
+    height: 100%;
+    float: left;
+    line-height: 70px;
+    padding-left: 10px;
+}
+
+.left_gnb .menu_icon{
+    position: relative;
+    display: inline-block;
+    width: 1.0em;
+    height: 0.6em;
+    margin-right: 0.1em;
+    border-top: 0.2em solid rgb(23, 29, 25);
+    border-bottom: 0.2em solid rgb(23, 29, 25);
+}
+
+.left_gnb .menu_icon:before{
+    content: "";
+    position: absolute;
+    top: 0.2em;
+    left: 0px;
+    width: 100%;
+    border-top: 0.2em solid rgb(23, 29, 25);
+}
+
+.left_gnb .menu_font{
+    font-size: 14px;
+    color: rgb(23, 29, 25);
+    font-weight: bold;
+}
+
+.logo_gnb{
+    height: 100%;
+    text-align: center;
+}
+
+.logo_gnb img{
+    width: 90px;
+    padding-top: 23px;
+    margin-left: -75px;
+}
+
+.right_gnb{
+    height: 100%;
+    position: absolute;
+    top: 0; right: 0;
+    line-height: 70px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.right_gnb .join_gnb{float: left; margin-right: 5px;}
+.right_gnb .login_gnb{float: left;margin-right: 5px;}
+
+.login_gnb a{
+    border: 2px solid rgb(23, 29, 25);
+    padding: 5px 10px;
+    border-radius: 2em;
+    color: rgb(23, 29, 25);
+}
+.login_gnb a:hover{color: #486bcd; border-color: #486bcd;}
+
+.join_gnb a{color: rgb(23, 29, 25);}
+.join_gnb a:hover{color: #486bcd;}
+/*-------------------------//gnb_wrapper 영역-------------------------*/
+
+#write_wrapper{
+    width: 100%;
+}
+
+#write_wrapper h1{
+    height: 55px;
+    line-height: 55px;
+    font-size: 25px;
+}
+
+#write_wrapper .write_form{
+    width: 373px;
+    margin: 20px auto;
+    border: none;
+    margin-bottom: 60px;
+}
+
+.write_form h3{
+    font-size: 17px;
+}
+
+.write_form .return_email{
+    height: 42px;
+    padding: 10px 0 10px 10px;
+}
+
+.return_email label{
+    font-size: 13px;
+    margin-top: 2px;
+}
+
+.return_email input{
+    width: 270px; height: 30px;
+}
+
+.write_form .game_sele{
+    width: 373px; height: 42px;
+    padding: 10px 0 10px 10px;
+}
+
+.game_sele label{
+    margin-right: 25px;
+    line-height: 38px;
+    font-size: 13px;
+}
+
+.game_sele select{
+    width: 270px; height: 30px;
+}
+
+.write_form .qna_kind{
+    width: 373px; height: 42px;
+    padding: 10px 0 10px 10px;
+    float: left;
+}
+
+.qna_kind label{
+    margin-right: 25px;
+    line-height: 38px;
+    font-size: 13px;
+}
+
+.qna_kind select{
+    width: 270px; height: 30px;
+}
+
+
+.write_form .qna_content{
+    width: 100%;
+    float: left;
+}
+
+.qna_content .tit_wrap{
+    height: 42px;
+    padding: 0px 0 10px 10px;
+}
+
+.tit_wrap label{
+    margin: 0 37px 0 13px;
+    font-size: 13px;
+}
+
+.tit_wrap input{
+    width: 270px; height: 30px;
+}
+
+.qna_content #content{
+    width: 320px; height: 250px;
+    margin: 0 10px;
+    font-size: 15px;
+    padding: 20px 20px 0 10px;
+}
+
+.write_form .add_file{
+    width: 365px;
+    padding: 10px 0 10px 10px;
+}
+
+.add_file label{
+    margin-right: 20px;
+    font-size: 13px;
+}
+
+.add_file input[type="text"]{
+    width: 220px; height: 25px;
+}
+
+.add_file input[type="button"]{
+    width: 50px; height: 30px;
+    font-size: 10px;
+}
+
+.write_form .warning_msg{
+    float: left;
+    width: 335px; height: 100px;
+    padding: 40px 10px 0 30px;
+    font-size: 10px;
+}
+/*--------------------------footer 영역--------------------------*/
+footer{
+    width: 100%; height: 120px;
+    font-size: 12px;
+}
+
+footer p {
+    text-align: center;
+    margin: 50px 0;
+}
+/*-------------------------//footer 영역-------------------------*/
+}
